@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hello-mvp
+    ports:
+      - "8080:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+      - ./styles.css:/usr/share/nginx/html/styles.css
+      - ./script.js:/usr/share/nginx/html/script.js
+      - ./hello.jpeg:/usr/share/nginx/html/hello.jpeg
+    restart: unless-stopped
+    networks:
+      - hello-network
+
+networks:
+  hello-network:
+    driver: bridge
