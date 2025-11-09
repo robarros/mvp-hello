@@ -82,7 +82,7 @@ const sendMessage = document.getElementById('sendMessage');
 const chatMessages = document.getElementById('chatMessages');
 
 // N8N Webhook URL - Será carregada do backend via API
-let N8N_WEBHOOK_URL = 'http://localhost:9090/webhook/f3f7af14-50c8-4fd0-8bd0-ac80b83660d5/chat';
+let N8N_WEBHOOK_URL = 'http://54.152.73.181:9090/webhook/f3f7af14-50c8-4fd0-8bd0-ac80b83660d5/chat';
 
 // Carregar configuração do backend
 fetch('/api/config')

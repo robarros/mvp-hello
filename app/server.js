@@ -45,7 +45,7 @@ app.get('/', (req, res) => {
         }
         
         // Substituir a URL do webhook do n8n
-        const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL || 'http://localhost:9090/webhook/f3f7af14-50c8-4fd0-8bd0-ac80b83660d5/chat';
+        const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL || 'http://54.152.73.181:9090/webhook/f3f7af14-50c8-4fd0-8bd0-ac80b83660d5/chat';
         const modifiedHtml = data.replace(
             /webhookUrl:\s*['"][^'"]*['"]/g,
             `webhookUrl: '${n8nWebhookUrl}'`
@@ -58,7 +58,7 @@ app.get('/', (req, res) => {
 // Rota para obter configurações (incluindo webhook do n8n)
 app.get('/api/config', (req, res) => {
     res.json({
-        n8nWebhookUrl: process.env.N8N_WEBHOOK_URL || 'http://localhost:9090/webhook/f3f7af14-50c8-4fd0-8bd0-ac80b83660d5/chat'
+        n8nWebhookUrl: process.env.N8N_WEBHOOK_URL || 'http://54.152.73.181:9090/webhook/f3f7af14-50c8-4fd0-8bd0-ac80b83660d5/chat'
     });
 });
 
