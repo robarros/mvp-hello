@@ -12,6 +12,8 @@
     <title>Hello - Sua Operadora Digital</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- n8n Chat Widget CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 </head>
 <body>
     <!-- Header -->
@@ -839,5 +841,39 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- n8n Chat Widget Container -->
+    <div id="n8n-chat"></div>
+    <!-- n8n Chat Widget -->
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+        createChat({
+            webhookUrl: 'http://localhost:9090/webhook/f3f7af14-50c8-4fd0-8bd0-ac80b83660d5/chat',
+            mode: 'window',
+            showWelcomeScreen: false,
+            loadPreviousSession: true,
+            initialMessages: [
+                'Olá! Bem-vindo à Hello Operadora 👋',
+                'Como posso ajudá-lo hoje?'
+            ],
+            i18n: {
+                pt: {
+                    title: 'Chat Hello',
+                    subtitle: 'Atendimento 24/7',
+                    footer: '',
+                    getStarted: 'Iniciar Conversa',
+                    inputPlaceholder: 'Digite sua mensagem...',
+                },
+            },
+            defaultLanguage: 'pt',
+            chatInputKey: 'chatInput',
+            chatSessionKey: 'sessionId',
+            enableStreaming: false,
+            allowFileUploads: false,
+            metadata: {
+                source: 'website',
+                page: window.location.pathname
+            }
+        });
+    </script>
 </body>
 </html>
