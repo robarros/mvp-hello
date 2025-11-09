@@ -12,7 +12,26 @@ services:
       - ./index.html:/usr/share/nginx/html/index.html
       - ./styles.css:/usr/share/nginx/html/styles.css
       - ./script.js:/usr/share/nginx/html/script.js
+      - ./n8n-chat-custom.css:/usr/share/nginx/html/n8n-chat-custom.css
       - ./hello.jpeg:/usr/share/nginx/html/hello.jpeg
+    restart: unless-stopped
+    depends_on:
+      - n8n
+    networks:
+      - hello-network
+
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n
+    ports:
+      - "9090:5678"
+    environment:
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - N8N_HOST=localhost
+      - GENERIC_TIMEZONE=America/Sao_Paulo
+    volumes:
+      - n8n_data:/home/node/.n8n
     restart: unless-stopped
     networks:
       - hello-network
@@ -20,3 +39,6 @@ services:
 networks:
   hello-network:
     driver: bridge
+
+volumes:
+  n8n_data:

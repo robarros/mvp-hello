@@ -1,0 +1,455 @@
+// Mobile Menu Toggle
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+if (hamburger) {
+    // Click event
+    hamburger.addEventListener('click', () => {
+        const isActive = navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+        
+        // Prevent body scroll when menu is open
+        if (isActive) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    });
+    
+    // Keyboard support (Enter or Space)
+    hamburger.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            const isActive = navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (isActive) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+    });
+}
+
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        
+        // Ignore links that are just "#" (like social media placeholders)
+        if (href === '#') {
+            e.preventDefault();
+            return;
+        }
+        
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            
+            // Close mobile menu if open and restore body scroll
+            if (navMenu && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+    });
+});
+
+// Contact Form
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        // Get form fields
+        const name = contactForm.querySelector('input[type="text"]').value.trim();
+        const email = contactForm.querySelector('input[type="email"]').value.trim();
+        const phone = contactForm.querySelector('input[type="tel"]').value.trim();
+        const message = contactForm.querySelector('textarea').value.trim();
+        
+        // Validate
+        if (!name || !email || !phone || !message) {
+            alert('Por favor, preencha todos os campos.');
+            return;
+        }
+        
+        // Validate email format
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert('Por favor, insira um e-mail válido.');
+            return;
+        }
+        
+        // Validate phone (basic Brazilian phone validation)
+        const phoneRegex = /^[\d\s\(\)\-\+]+$/;
+        if (!phoneRegex.test(phone) || phone.replace(/\D/g, '').length < 10) {
+            alert('Por favor, insira um telefone válido.');
+            return;
+        }
+        
+        const data = { name, email, phone, message };
+        
+        // Here you can send the form data to N8N or your backend
+        console.log('Form data:', data);
+        
+        // Show success message
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = '✓ Enviado!';
+        submitBtn.style.background = 'var(--success-color)';
+        submitBtn.disabled = true;
+        
+        setTimeout(() => {
+            submitBtn.textContent = originalText;
+            submitBtn.style.background = '';
+            submitBtn.disabled = false;
+            contactForm.reset();
+        }, 3000);
+        
+        alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+    });
+}
+
+// Hero button - See Plans
+const verPlanosBtn = document.getElementById('verPlanosBtn');
+if (verPlanosBtn) {
+    verPlanosBtn.addEventListener('click', () => {
+        const plansSection = document.getElementById('plans');
+        if (plansSection) {
+            plansSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+}
+
+// About button - See Plans
+const conhecaPlanosBtn = document.getElementById('conhecaPlanosBtn');
+if (conhecaPlanosBtn) {
+    conhecaPlanosBtn.addEventListener('click', () => {
+        const plansSection = document.getElementById('plans');
+        if (plansSection) {
+            plansSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+}
+
+// Animation on scroll
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.animation = 'fadeInUp 0.8s ease forwards';
+            // Remove observer after animation
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Observe all cards and sections
+document.querySelectorAll('.plan-card, .service-card, .mission-card, .value-item, .contact-item').forEach(card => {
+    card.style.opacity = '0';
+    observer.observe(card);
+});
+
+// Smooth reveal for section titles
+document.querySelectorAll('section h2').forEach(title => {
+    title.style.opacity = '0';
+    observer.observe(title);
+});
+
+// FAQ Functionality
+const faqItems = document.querySelectorAll('.faq-item');
+const faqCategoryBtns = document.querySelectorAll('.faq-category-btn');
+const faqSearch = document.getElementById('faqSearch');
+const faqContainer = document.querySelector('.faq-container');
+const faqContactBtn = document.getElementById('faqContactBtn');
+
+// Toggle FAQ item
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    
+    question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close all other items
+        faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+                otherItem.classList.remove('active');
+            }
+        });
+        
+        // Toggle current item
+        if (isActive) {
+            item.classList.remove('active');
+        } else {
+            item.classList.add('active');
+        }
+    });
+});
+
+// Filter by category
+faqCategoryBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const category = btn.dataset.category;
+        
+        // Update active button
+        faqCategoryBtns.forEach(otherBtn => {
+            otherBtn.classList.remove('active');
+        });
+        btn.classList.add('active');
+        
+        // Clear search
+        if (faqSearch) {
+            faqSearch.value = '';
+        }
+        
+        // Filter items
+        let visibleCount = 0;
+        faqItems.forEach(item => {
+            const itemCategory = item.dataset.category;
+            
+            if (category === 'all' || itemCategory === category) {
+                item.classList.remove('hidden');
+                item.classList.remove('active');
+                visibleCount++;
+            } else {
+                item.classList.add('hidden');
+            }
+        });
+        
+        // Show no results message
+        showNoResults(visibleCount === 0);
+    });
+});
+
+// Search functionality
+if (faqSearch) {
+    faqSearch.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase().trim();
+        
+        // Reset category filter
+        faqCategoryBtns.forEach(btn => {
+            if (btn.dataset.category === 'all') {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+        
+        let visibleCount = 0;
+        
+        if (searchTerm === '') {
+            // Show all items if search is empty
+            faqItems.forEach(item => {
+                item.classList.remove('hidden');
+                item.classList.remove('active');
+                visibleCount++;
+            });
+        } else {
+            // Filter by search term
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question h3').textContent.toLowerCase();
+                const answer = item.querySelector('.faq-answer p').textContent.toLowerCase();
+                
+                if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                    item.classList.remove('hidden');
+                    item.classList.remove('active');
+                    visibleCount++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+        
+        // Show no results message
+        showNoResults(visibleCount === 0);
+    });
+}
+
+// Show/hide no results message
+function showNoResults(show) {
+    let noResultsDiv = document.querySelector('.faq-no-results');
+    
+    if (show) {
+        if (!noResultsDiv) {
+            noResultsDiv = document.createElement('div');
+            noResultsDiv.className = 'faq-no-results';
+            noResultsDiv.innerHTML = `
+                <i class="fas fa-search"></i>
+                <h3>Nenhum resultado encontrado</h3>
+                <p>Tente buscar por outros termos ou entre em contato conosco</p>
+            `;
+            faqContainer.appendChild(noResultsDiv);
+        }
+    } else {
+        if (noResultsDiv) {
+            noResultsDiv.remove();
+        }
+    }
+}
+
+// Função para abrir o chat n8n
+function openN8nChat() {
+    console.log('� openN8nChat() chamada');
+    
+    // Aguardar o chat carregar
+    let attempts = 0;
+    const maxAttempts = 25; // 5 segundos (25 * 200ms)
+    
+    const checkChat = setInterval(() => {
+        attempts++;
+        const chatContainer = document.querySelector('#n8n-chat');
+        const toggleButton = chatContainer?.querySelector('button[class*="toggle"]');
+        
+        console.log(`🔍 Tentativa ${attempts}/${maxAttempts} - Procurando chat...`, { 
+            chatContainer: !!chatContainer, 
+            toggleButton: !!toggleButton 
+        });
+        
+        if (toggleButton) {
+            clearInterval(checkChat);
+            console.log('✅ Chat encontrado!');
+            
+            // Verificar se o chat já está aberto
+            const isOpen = chatContainer.querySelector('div[class*="window"][class*="open"], div[class*="opened"]');
+            
+            console.log('📊 Status:', { isOpen: !!isOpen });
+            
+            if (!isOpen) {
+                // Abrir o chat
+                console.log('🚀 Clicando para abrir chat...');
+                toggleButton.click();
+                console.log('✅ Click executado!');
+            } else {
+                console.log('ℹ️ Chat já está aberto');
+            }
+        } else if (attempts >= maxAttempts) {
+            clearInterval(checkChat);
+            console.log('❌ Timeout - chat não encontrado após 5 segundos');
+            console.log('💡 Dica: Verifique se o n8n está rodando e se o workflow está ativo');
+        }
+    }, 200);
+}
+
+// Configurar botões "Falar com Atendente" após o DOM carregar
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('🔷 DOM Carregado - Configurando botões...');
+    
+    // Aguardar um pouco para garantir que todos os elementos foram renderizados
+    setTimeout(() => {
+        // Botão "Falar com Atendente" no FAQ
+        const faqContactBtn = document.getElementById('faqContactBtn');
+        if (faqContactBtn) {
+            console.log('✅ Botão FAQ encontrado');
+            faqContactBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                console.log('🔵 Clique no botão FAQ - Abrindo chat...');
+                openN8nChat();
+            });
+        } else {
+            console.log('❌ Botão FAQ NÃO encontrado (ID: faqContactBtn)');
+        }
+
+        // Botão "Falar com Atendente" no Hero
+        const heroAtendentBtn = document.querySelector('.hero-buttons .btn-secondary');
+        if (heroAtendentBtn) {
+            console.log('✅ Botão Hero encontrado');
+            heroAtendentBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                console.log('🔵 Clique no botão Hero - Abrindo chat...');
+                openN8nChat();
+            });
+        } else {
+            console.log('❌ Botão Hero NÃO encontrado (.hero-buttons .btn-secondary)');
+        }
+        
+        console.log('🔷 Configuração de botões concluída');
+    }, 500);
+});
+
+// n8n Chat - Função para fechar chat ao digitar "sair"
+function setupChatExitListener() {
+    // Aguardar o chat carregar completamente
+    const checkChatLoaded = setInterval(() => {
+        const chatContainer = document.querySelector('#n8n-chat');
+        const chatInput = chatContainer?.querySelector('textarea, input[type="text"]');
+        
+        if (chatInput) {
+            clearInterval(checkChatLoaded);
+            
+            // Listener para detectar quando usuário envia mensagem
+            chatInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    const message = chatInput.value.trim().toLowerCase();
+                    
+                    // Verificar se a mensagem é "sair" ou variações
+                    if (message === 'sair' || message === 'tchau' || message === 'fechar' || message === 'encerrar') {
+                        // Aguardar um pouco para a mensagem ser enviada
+                        setTimeout(() => {
+                            // Fechar o chat
+                            const closeButton = chatContainer.querySelector('button[class*="close"], button[class*="toggle"]');
+                            if (closeButton) {
+                                closeButton.click();
+                            }
+                        }, 1500); // Aguarda 1.5 segundos para mostrar a resposta de despedida
+                    }
+                }
+            });
+            
+            // Também detectar clique no botão de enviar
+            const sendButton = chatContainer.querySelector('button[type="submit"], button[class*="send"]');
+            if (sendButton) {
+                sendButton.addEventListener('click', () => {
+                    const message = chatInput.value.trim().toLowerCase();
+                    
+                    if (message === 'sair' || message === 'tchau' || message === 'fechar' || message === 'encerrar') {
+                        setTimeout(() => {
+                            const closeButton = chatContainer.querySelector('button[class*="close"], button[class*="toggle"]');
+                            if (closeButton) {
+                                closeButton.click();
+                            }
+                        }, 1500);
+                    }
+                });
+            }
+        }
+    }, 500); // Verificar a cada 500ms até o chat carregar
+    
+    // Limpar o intervalo após 10 segundos se não encontrar o chat
+    setTimeout(() => clearInterval(checkChatLoaded), 10000);
+}
+
+// Inicializar listener quando a página carregar
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupChatExitListener);
+} else {
+    setupChatExitListener();
+}

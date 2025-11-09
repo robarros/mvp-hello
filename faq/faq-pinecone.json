@@ -1,0 +1,516 @@
+[
+  {
+    "id": "empresa-001",
+    "text": "O que é a Hello Operadora? A Hello nasceu da visão de unir a inovação tecnológica chinesa com o dinamismo e potencial do mercado brasileiro. Somos uma operadora de telefonia móvel que representa a ponte entre dois dos maiores mercados do mundo. Com sede na China, um dos maiores centros de tecnologia e inovação, trazemos décadas de experiência em telecomunicações para o Brasil. Chegamos ao país em 2025 com o compromisso de revolucionar o mercado de telefonia móvel com tecnologia 5G de ponta e planos inovadores.",
+    "metadata": {
+      "category": "Sobre a Empresa",
+      "question": "O que é a Hello Operadora?",
+      "keywords": ["hello", "operadora", "empresa", "sobre", "quem somos", "origem", "china", "brasil", "2025"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "empresa-002",
+    "text": "Qual a origem da Hello e por que investiram no Brasil? Com sede na China, um dos maiores centros de tecnologia e inovação do mundo, a Hello traz para o Brasil décadas de experiência em telecomunicações. Investimos significativamente no mercado brasileiro porque acreditamos no potencial de crescimento e na força do povo brasileiro. O Brasil é um mercado estratégico para nossa expansão global, com uma população conectada e ávida por tecnologia de qualidade. Nossa missão é conectar dois gigantes: a China e o Brasil, oferecendo o melhor da tecnologia asiática adaptada às necessidades dos brasileiros.",
+    "metadata": {
+      "category": "Sobre a Empresa",
+      "question": "Qual a origem da Hello e por que investiram no Brasil?",
+      "keywords": ["origem", "china", "investimento", "brasil", "porque", "mercado", "estratégia"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "empresa-003",
+    "text": "Que tipo de tecnologia a Hello utiliza? Utilizamos tecnologia de ponta desenvolvida na China, adaptada às necessidades dos brasileiros. Nossa infraestrutura 5G é uma das mais avançadas, proporcionando velocidade e qualidade incomparáveis em comunicação móvel. Trabalhamos com equipamentos de última geração, antenas inteligentes e sistemas de rede que garantem estabilidade mesmo em horários de pico. Nossa tecnologia permite velocidades de até 10Gbps no 5G e latência ultra baixa, ideal para games, streaming e videochamadas em alta qualidade.",
+    "metadata": {
+      "category": "Sobre a Empresa",
+      "question": "Que tipo de tecnologia a Hello utiliza?",
+      "keywords": ["tecnologia", "5g", "inovação", "infraestrutura", "equipamentos", "velocidade", "10gbps"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "empresa-004",
+    "text": "Qual o compromisso da Hello com o Brasil? Nosso investimento vai além da tecnologia. Criamos empregos locais, capacitamos profissionais brasileiros e contribuímos para o desenvolvimento das telecomunicações no país. Temos centros de treinamento para formar técnicos especializados em 5G, investimos em infraestrutura em regiões menos atendidas e apoiamos projetos sociais de inclusão digital. Acreditamos que a parceria sino-brasileira é essencial para um futuro conectado. Todo ano, reinvestimos parte do nosso lucro em expansão da rede e melhorias no atendimento ao cliente brasileiro.",
+    "metadata": {
+      "category": "Sobre a Empresa",
+      "question": "Qual o compromisso da Hello com o Brasil?",
+      "keywords": ["compromisso", "brasil", "empregos", "investimento", "social", "desenvolvimento", "treinamento"],
+      "type": "faq",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "empresa-005",
+    "text": "Quais são os valores da Hello? Nossos quatro pilares fundamentais são: Conexão Global - Unindo continentes através da comunicação, conectando pessoas e culturas; Inovação Constante - Sempre à frente em tecnologia, trazendo as últimas novidades em telecomunicações; Foco no Cliente - Seu sucesso é nossa prioridade, oferecendo atendimento humanizado e soluções personalizadas; Sustentabilidade - Tecnologia responsável e verde, com torres sustentáveis e compromisso com energia limpa. Esses valores guiam todas as nossas decisões e operações no Brasil.",
+    "metadata": {
+      "category": "Sobre a Empresa",
+      "question": "Quais são os valores da Hello?",
+      "keywords": ["valores", "missão", "visão", "princípios", "cultura", "filosofia", "sustentabilidade"],
+      "type": "faq",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "empresa-006",
+    "text": "A Hello tem lojas físicas no Brasil? Sim! Temos lojas físicas nas principais capitais e cidades do Brasil, funcionando de segunda a sábado das 9h às 20h e aos domingos das 10h às 18h. Em nossas lojas você pode: contratar planos, trocar chips, tirar dúvidas com nossos consultores, comprar aparelhos com desconto exclusivo, e receber suporte técnico presencial. Consulte nosso site para encontrar a loja mais próxima de você. Também temos quiosques em shopping centers e parcerias com revendedoras autorizadas em todo o país.",
+    "metadata": {
+      "category": "Sobre a Empresa",
+      "question": "A Hello tem lojas físicas no Brasil?",
+      "keywords": ["lojas", "físicas", "endereço", "onde encontrar", "localização", "horário"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "empresa-007",
+    "text": "Como a Hello se diferencia das outras operadoras? Nossa diferença está na combinação única de tecnologia avançada chinesa com compreensão do mercado brasileiro. Oferecemos: Infraestrutura 5G de última geração; Planos sem fidelidade obrigatória; Apps ilimitados (redes sociais não descontam da franquia); Atendimento 24h em 4 idiomas (português, inglês, espanhol e mandarim); Transparência total - sem taxas escondidas; Investimento contínuo em expansão da rede; Suporte técnico especializado com atendimento prioritário; Preços competitivos com qualidade premium. Somos uma operadora global com DNA brasileiro.",
+    "metadata": {
+      "category": "Sobre a Empresa",
+      "question": "Como a Hello se diferencia das outras operadoras?",
+      "keywords": ["diferencial", "vantagens", "por que escolher", "benefícios", "competitivo"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "empresa-008",
+    "text": "A Hello é confiável e regulamentada no Brasil? Absolutamente! Somos uma operadora 100% regulamentada pela Anatel (Agência Nacional de Telecomunicações) e cumprimos todas as exigências legais brasileiras. Possuímos todas as licenças necessárias para operar em território nacional, seguimos rigorosamente as normas de telecomunicações e proteção de dados (LGPD), temos certificações internacionais de qualidade (ISO 9001), e nossos sistemas de segurança são auditados regularmente. Você pode consultar nossa situação na Anatel através do nosso código de operadora disponível no site. Transparência e conformidade são prioridades para nós.",
+    "metadata": {
+      "category": "Sobre a Empresa",
+      "question": "A Hello é confiável e regulamentada no Brasil?",
+      "keywords": ["confiável", "anatel", "regulamentação", "legal", "licença", "segurança", "lgpd"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "atendimento-001",
+    "text": "Quais são os canais de atendimento disponíveis? Oferecemos diversos canais para seu conforto: Telefone: 0800 123 4567 (ligação gratuita); WhatsApp: (11) 98765-4321; Chat online: Disponível no site e aplicativo Hello; E-mail: contato@hello.com.br; Lojas físicas: Consulte nossas lojas mais próximas no site; App Hello: Disponível para iOS e Android com área do cliente completa; Redes sociais: Atendimento via direct no Instagram e Facebook.",
+    "metadata": {
+      "category": "Atendimento",
+      "question": "Quais são os canais de atendimento disponíveis?",
+      "keywords": ["atendimento", "canais", "contato", "telefone", "whatsapp", "chat", "email", "0800"],
+      "type": "faq",
+      "priority": "high",
+      "contact_info": {
+        "phone": "0800 123 4567",
+        "whatsapp": "(11) 98765-4321",
+        "email": "contato@hello.com.br"
+      }
+    }
+  },
+  {
+    "id": "atendimento-002",
+    "text": "Qual o horário de funcionamento do atendimento? Nosso atendimento funciona 24 horas por dia, 7 dias por semana, incluindo feriados! Você pode ligar para o 0800 123 4567, usar o chat online ou o WhatsApp a qualquer momento. Nossas lojas físicas funcionam de segunda a sábado, das 9h às 20h, e aos domingos das 10h às 18h. O app e área do cliente no site estão disponíveis 24h para consultas, pagamentos e contratações.",
+    "metadata": {
+      "category": "Atendimento",
+      "question": "Qual o horário de funcionamento do atendimento?",
+      "keywords": ["horário", "funcionamento", "24 horas", "lojas", "atendimento", "quando"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "atendimento-003",
+    "text": "Como funciona o suporte técnico? Nosso suporte técnico está disponível 24h pelo 0800 123 4567 (opção 2) ou chat online. Para problemas com internet, ligações, SMS ou configurações de aparelho, nossa equipe especializada pode ajudar remotamente. Em casos mais complexos, agendamos visita técnica gratuita ou orientamos sobre assistências técnicas autorizadas. Clientes dos planos Premium e Ultra têm atendimento prioritário com tempo médio de espera de apenas 30 segundos.",
+    "metadata": {
+      "category": "Atendimento",
+      "question": "Como funciona o suporte técnico?",
+      "keywords": ["suporte técnico", "ajuda", "problemas", "internet", "configuração", "visita técnica"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "atendimento-004",
+    "text": "Posso ser atendido em outro idioma? Sim! Além do português, oferecemos atendimento em inglês, espanhol e mandarim pelo 0800 123 4567. Ao ligar, informe ao atendente o idioma de sua preferência. No app e site, você também pode selecionar o idioma de navegação. Este serviço está incluído em todos os planos sem custo adicional.",
+    "metadata": {
+      "category": "Atendimento",
+      "question": "Posso ser atendido em outro idioma?",
+      "keywords": ["idioma", "inglês", "espanhol", "mandarim", "língua estrangeira", "internacional"],
+      "type": "faq",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "atendimento-005",
+    "text": "Como faço para elogiar ou reclamar do atendimento? Sua opinião é muito importante! Para elogios, reclamações ou sugestões, acesse a área 'Ouvidoria' no site ou app. Você também pode enviar e-mail para ouvidoria@hello.com.br ou ligar para o 0800 123 4567 (opção 9). Respondemos todas as manifestações em até 48 horas. Casos não resolvidos podem ser encaminhados para a Anatel através do nosso código de operadora disponível no site.",
+    "metadata": {
+      "category": "Atendimento",
+      "question": "Como faço para elogiar ou reclamar do atendimento?",
+      "keywords": ["reclamação", "elogio", "ouvidoria", "sugestão", "anatel", "feedback"],
+      "type": "faq",
+      "priority": "medium",
+      "contact_info": {
+        "ouvidoria": "ouvidoria@hello.com.br"
+      }
+    }
+  },
+  {
+    "id": "planos-001",
+    "text": "Quais planos de telefonia móvel vocês oferecem? Oferecemos 3 planos principais de pós-pago: Básico (R$ 79/mês): 10GB de internet, ligações ilimitadas para todo Brasil, SMS ilimitado e suporte 24h. Premium (R$ 129/mês): 30GB de internet, ligações ilimitadas, SMS ilimitado, apps grátis (WhatsApp, Instagram, Facebook, Twitter sem descontar da franquia) e suporte prioritário. Ultra (R$ 199/mês): 60GB de internet, 5G ilimitado, ligações ilimitadas, SMS ilimitado, roaming internacional incluído em 15 países e suporte VIP. Também oferecemos planos pré-pagos a partir de R$ 10 e planos família com até 5 linhas compartilhadas.",
+    "metadata": {
+      "category": "Planos",
+      "question": "Quais planos de telefonia móvel vocês oferecem?",
+      "keywords": ["planos", "preços", "valores", "pós-pago", "ofertas", "básico", "premium", "ultra"],
+      "type": "faq",
+      "priority": "high",
+      "plans": {
+        "basico": {"price": 79, "data": "10GB"},
+        "premium": {"price": 129, "data": "30GB"},
+        "ultra": {"price": 199, "data": "60GB"}
+      }
+    }
+  },
+  {
+    "id": "planos-002",
+    "text": "Qual a diferença entre os planos Básico, Premium e Ultra? Básico: Ideal para uso moderado, oferece o essencial com boa franquia de dados. Premium: Nosso plano mais popular! Inclui apps ilimitados (redes sociais não descontam da internet) e franquia generosa para quem usa muito o celular. Ultra: Para quem não quer limites! 5G em velocidade máxima sem redução, roaming internacional (EUA, Europa, China, Japão e mais 11 países) e prioridade na rede em eventos e locais movimentados. Todos incluem ligações e SMS ilimitados para qualquer operadora do Brasil.",
+    "metadata": {
+      "category": "Planos",
+      "question": "Qual a diferença entre os planos Básico, Premium e Ultra?",
+      "keywords": ["diferença", "comparação", "planos", "básico", "premium", "ultra", "qual escolher"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "planos-003",
+    "text": "Vocês têm plano pré-pago? Como funciona? Sim! Nosso pré-pago Hello Controle é super flexível. Recargas a partir de R$ 10 com validade de 15 dias. Exemplos de recargas: R$ 10 = 2GB + 100min; R$ 20 = 5GB + 200min; R$ 30 = 10GB + ilimitado; R$ 50 = 20GB + ilimitado + apps grátis. Você pode recarregar pelo app, site, lotéricas, bancos ou enviando SMS. Créditos não utilizados acumulam para próxima recarga. Sem mensalidade, sem fidelidade e sem surpresas na fatura!",
+    "metadata": {
+      "category": "Planos",
+      "question": "Vocês têm plano pré-pago? Como funciona?",
+      "keywords": ["pré-pago", "prepago", "recarga", "controle", "sem fidelidade", "flexível"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "planos-004",
+    "text": "Existe plano família ou para mais de uma linha? Sim! Nossos Planos Família Hello permitem até 5 linhas na mesma conta com desconto progressivo: 2ª linha: 20% off; 3ª linha: 30% off; 4ª e 5ª linhas: 40% off. Todos compartilham a mesma data de vencimento e podem ter planos diferentes. Exemplo: Titular com Ultra + 2 dependentes com Premium + 2 com Básico. A franquia de internet pode ser compartilhada ou individual (você escolhe). Ideal para economizar e gerenciar todas as linhas da família em um só lugar!",
+    "metadata": {
+      "category": "Planos",
+      "question": "Existe plano família ou para mais de uma linha?",
+      "keywords": ["plano família", "várias linhas", "desconto", "família", "múltiplas linhas", "dependentes"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "planos-005",
+    "text": "Os apps grátis do plano Premium incluem quais aplicativos? No plano Premium e Ultra, você usa ilimitadamente sem descontar da franquia: WhatsApp (mensagens, chamadas de voz e vídeo), Instagram, Facebook, Twitter, TikTok, Telegram e Waze. Você pode curtir, postar, assistir stories e fazer videochamadas à vontade! Apenas downloads de vídeos e fotos nesses apps consomem franquia. Streaming de música (Spotify, Deezer) também está incluso nos apps grátis do plano Ultra.",
+    "metadata": {
+      "category": "Planos",
+      "question": "Os apps grátis do plano Premium incluem quais aplicativos?",
+      "keywords": ["apps grátis", "aplicativos ilimitados", "whatsapp", "instagram", "redes sociais"],
+      "type": "faq",
+      "priority": "high",
+      "free_apps": ["WhatsApp", "Instagram", "Facebook", "Twitter", "TikTok", "Telegram", "Waze"]
+    }
+  },
+  {
+    "id": "planos-006",
+    "text": "Como funciona a contratação de um plano? A contratação é simples e rápida! Você pode contratar diretamente pelo nosso site, aplicativo ou em uma de nossas lojas físicas. Para contratação online, basta escolher o plano desejado, preencher seus dados e aguardar o chip em casa em até 3 dias úteis. A ativação é automática ao inserir o chip no aparelho.",
+    "metadata": {
+      "category": "Planos",
+      "question": "Como funciona a contratação de um plano?",
+      "keywords": ["contratação", "como contratar", "comprar plano", "ativar", "chip"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "planos-007",
+    "text": "Posso trocar de plano depois de contratado? Sim! Você pode alterar seu plano a qualquer momento através do nosso aplicativo, site ou central de atendimento. A mudança para um plano superior é imediata. Para planos inferiores, a alteração ocorrerá na próxima renovação. Não há taxa de alteração.",
+    "metadata": {
+      "category": "Planos",
+      "question": "Posso trocar de plano depois de contratado?",
+      "keywords": ["trocar plano", "mudar plano", "upgrade", "downgrade", "alterar"],
+      "type": "faq",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "planos-008",
+    "text": "Os planos têm fidelidade? Nossos planos pós-pagos não possuem fidelidade obrigatória, você pode cancelar quando quiser sem multa. Caso opte por um plano com fidelidade de 12 meses, você ganha benefícios exclusivos como aparelho com desconto ou bônus de internet. A fidelidade só se aplica se você escolher essa opção.",
+    "metadata": {
+      "category": "Planos",
+      "question": "Os planos têm fidelidade?",
+      "keywords": ["fidelidade", "contrato", "cancelamento", "multa", "sem fidelidade"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "planos-009",
+    "text": "O que acontece se eu exceder a franquia de internet? Ao atingir 100% da sua franquia de internet, a velocidade será reduzida para até 1Mbps, mas você continua navegando sem custos adicionais. Você pode contratar pacotes extras de dados a qualquer momento pelo app ou enviar um SMS. A franquia é renovada todo mês na data do seu aniversário de contratação.",
+    "metadata": {
+      "category": "Planos",
+      "question": "O que acontece se eu exceder a franquia de internet?",
+      "keywords": ["franquia", "exceder", "acabou internet", "redução velocidade", "pacote adicional"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "cobertura-001",
+    "text": "Como verificar a cobertura na minha região? Acesse nosso site e vá na seção 'Cobertura'. Digite seu CEP ou endereço completo para verificar a disponibilidade de cobertura 4G e 5G na sua região. Você também pode ligar para 0800 123 4567 e consultar com um de nossos atendentes. Nossa cobertura está em constante expansão.",
+    "metadata": {
+      "category": "Cobertura",
+      "question": "Como verificar a cobertura na minha região?",
+      "keywords": ["cobertura", "disponibilidade", "região", "cep", "consultar cobertura"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "cobertura-002",
+    "text": "Meu celular é compatível com 5G? Para usar nossa rede 5G, seu aparelho precisa ser compatível com a tecnologia 5G. A maioria dos smartphones lançados a partir de 2021 já possuem essa funcionalidade. Você pode verificar no manual do seu aparelho ou nas configurações em 'Sobre o telefone'. Mesmo sem aparelho 5G, você continua usando normalmente o 4G.",
+    "metadata": {
+      "category": "Cobertura",
+      "question": "Meu celular é compatível com 5G?",
+      "keywords": ["5g", "compatibilidade", "aparelho", "smartphone", "tecnologia"],
+      "type": "faq",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "cobertura-003",
+    "text": "Funciona em todo o Brasil? Sim! Temos cobertura nacional 4G em todas as capitais e principais cidades do Brasil. Nossa rede 5G está disponível nas principais regiões metropolitanas e em constante expansão. Em áreas onde o 5G ainda não chegou, você utiliza automaticamente o 4G com a mesma qualidade.",
+    "metadata": {
+      "category": "Cobertura",
+      "question": "Funciona em todo o Brasil?",
+      "keywords": ["cobertura nacional", "brasil", "todo país", "capitais", "cidades"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "portabilidade-001",
+    "text": "O que é portabilidade numérica? Portabilidade numérica é o direito garantido por lei de você trocar de operadora mantendo o mesmo número de telefone. Isso significa que você pode migrar de qualquer operadora para a Hello e continuar usando o mesmo número que sempre teve, sem precisar avisar todos os seus contatos. O serviço é totalmente gratuito e o processo é simples e seguro. A portabilidade é regulamentada pela Anatel e todas as operadoras são obrigadas a facilitar esse processo.",
+    "metadata": {
+      "category": "Portabilidade",
+      "question": "O que é portabilidade numérica?",
+      "keywords": ["portabilidade", "o que é", "definição", "mudar operadora", "manter número"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "portabilidade-002",
+    "text": "Como fazer a portabilidade do meu número? A portabilidade é grátis e fácil! Passo a passo: 1) Contrate seu plano Hello (online, app ou loja); 2) Você receberá o chip e as instruções por SMS; 3) Envie um SMS com a palavra 'PORT' para o número indicado; 4) Confirme seus dados pessoais (nome, CPF, endereço); 5) Aguarde até 3 dias úteis; 6) Você será avisado por SMS quando a portabilidade estiver concluída; 7) Seu número antigo será automaticamente transferido para o chip Hello. Durante todo o processo, seu número antigo continua funcionando normalmente até a conclusão.",
+    "metadata": {
+      "category": "Portabilidade",
+      "question": "Como fazer a portabilidade do meu número?",
+      "keywords": ["como fazer", "portabilidade", "passo a passo", "port", "sms"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "portabilidade-003",
+    "text": "Quanto tempo demora a portabilidade? O prazo legal é de até 3 dias úteis após o envio da solicitação via SMS. Na prática, a maioria das portabilidades é concluída em 24 a 48 horas. Você receberá SMS informativos em cada etapa: confirmação do pedido, análise em andamento, e confirmação de conclusão. Durante todo esse período, você continua usando seu número normalmente na operadora antiga. Quando a portabilidade for concluída, basta inserir o chip Hello e seu número estará automaticamente ativado.",
+    "metadata": {
+      "category": "Portabilidade",
+      "question": "Quanto tempo demora a portabilidade?",
+      "keywords": ["tempo", "prazo", "demora", "quanto tempo", "dias úteis"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "portabilidade-004",
+    "text": "Quanto custa fazer a portabilidade? A portabilidade é 100% GRATUITA! Você não paga nada para trazer seu número para a Hello. Não há taxa de portabilidade, taxa de transferência ou qualquer custo adicional. Isso é garantido por lei - nenhuma operadora pode cobrar pela portabilidade. O único custo que você terá é o valor do plano Hello que escolher. Também não há custos com a operadora antiga para liberar seu número - eles são obrigados por lei a facilitar a portabilidade sem cobranças.",
+    "metadata": {
+      "category": "Portabilidade",
+      "question": "Quanto custa fazer a portabilidade?",
+      "keywords": ["custo", "preço", "quanto custa", "grátis", "gratuito", "taxa"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "portabilidade-005",
+    "text": "Perco meu número se trocar de operadora? Não! Com a portabilidade numérica, você mantém seu número ao trocar de operadora. O processo é garantido por lei (Lei Geral de Telecomunicações) e totalmente gratuito. Seu número é seu, independente da operadora. Ao vir para Hello, você continua usando o mesmo número que já possui. Seus contatos não precisam ser avisados, você não perde mensagens ou histórico, e seu WhatsApp continua funcionando normalmente após a portabilidade.",
+    "metadata": {
+      "category": "Portabilidade",
+      "question": "Perco meu número se trocar de operadora?",
+      "keywords": ["perder número", "trocar operadora", "manter número", "lei"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "portabilidade-006",
+    "text": "Posso usar meu chip enquanto aguardo a portabilidade? Sim! Ao receber seu chip Hello, você já pode utilizá-lo com um número provisório enquanto aguarda a conclusão da portabilidade. Você já terá acesso a toda internet do seu plano e poderá fazer ligações normalmente. É uma ótima forma de testar nossa rede e qualidade de serviço. Quando a portabilidade for concluída, o número antigo será transferido automaticamente para o chip - você não precisa fazer nada. Seu número provisório será desativado e o número portado assume seu lugar.",
+    "metadata": {
+      "category": "Portabilidade",
+      "question": "Posso usar meu chip enquanto aguardo a portabilidade?",
+      "keywords": ["usar chip", "número provisório", "aguardar", "durante processo"],
+      "type": "faq",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "portabilidade-007",
+    "text": "Quais documentos preciso para fazer a portabilidade? Para fazer a portabilidade você precisa ter em mãos: CPF (o mesmo cadastrado na operadora atual); RG ou documento com foto; Comprovante de residência atualizado (últimos 3 meses); Número do telefone que será portado. Importante: Os dados devem estar exatamente iguais ao cadastro da sua operadora atual. Caso tenha mudado de endereço ou nome, atualize primeiro na operadora atual antes de solicitar a portabilidade. Para empresas (CNPJ), é necessário também o contrato social ou última alteração.",
+    "metadata": {
+      "category": "Portabilidade",
+      "question": "Quais documentos preciso para fazer a portabilidade?",
+      "keywords": ["documentos", "cpf", "rg", "comprovante", "necessário"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "portabilidade-008",
+    "text": "Posso cancelar a portabilidade depois de solicitada? Sim, você pode cancelar a portabilidade antes dela ser concluída. Entre em contato com nosso atendimento pelo 0800 123 4567 ou pelo chat e informe que deseja cancelar o processo. Se a portabilidade ainda não foi efetivada, faremos o cancelamento imediatamente e você continuará com sua operadora atual. Porém, se você já enviou o SMS 'PORT' e mudou de ideia, é importante cancelar o quanto antes. Após a conclusão da portabilidade, para voltar à operadora anterior você precisará fazer uma nova portabilidade.",
+    "metadata": {
+      "category": "Portabilidade",
+      "question": "Posso cancelar a portabilidade depois de solicitada?",
+      "keywords": ["cancelar", "desistir", "voltar atrás", "parar processo"],
+      "type": "faq",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "portabilidade-009",
+    "text": "E se minha portabilidade for negada ou tiver problemas? As causas mais comuns de problemas são: Dados divergentes - CPF, nome ou endereço diferentes do cadastro na operadora atual; Débitos pendentes - Contas em aberto com a operadora antiga (você deve quitá-las primeiro); Linha bloqueada - Por falta de pagamento ou uso; Chip não cadastrado - Linha pré-paga sem cadastro completo. Se sua portabilidade for negada, entraremos em contato explicando o motivo e orientando como resolver. Nossa equipe de suporte especializada em portabilidade está disponível 24h para ajudar você em todo o processo.",
+    "metadata": {
+      "category": "Portabilidade",
+      "question": "E se minha portabilidade for negada ou tiver problemas?",
+      "keywords": ["negada", "recusada", "problemas", "erro", "não funcionou"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "portabilidade-010",
+    "text": "O WhatsApp continua funcionando após a portabilidade? Sim! Seu WhatsApp continua funcionando normalmente após a portabilidade. Como você mantém o mesmo número, o WhatsApp reconhece automaticamente e você não perde nada: conversas, grupos, contatos, mídia - tudo permanece. Dica importante: Antes de trocar o chip, faça backup do WhatsApp (Configurações > Conversas > Backup). Após a portabilidade ser concluída e você inserir o chip Hello, o WhatsApp pode pedir para verificar seu número novamente (você receberá um código por SMS). Pronto! Em poucos segundos tudo volta ao normal.",
+    "metadata": {
+      "category": "Portabilidade",
+      "question": "O WhatsApp continua funcionando após a portabilidade?",
+      "keywords": ["whatsapp", "continua", "funciona", "mensagens", "conversas"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "portabilidade-011",
+    "text": "Posso portar um número pré-pago para pós-pago na Hello? Sim! Você pode portar números pré-pagos para pós-pago ou pós-pagos para pré-pago na Hello sem problemas. O processo é o mesmo. Muitos clientes aproveitam a portabilidade para mudar de modalidade e ter mais controle ou comodidade. Ao contratar um plano pós-pago Hello e solicitar a portabilidade do seu número pré-pago, você automaticamente passa a ter os benefícios do pós: franquia generosa, apps ilimitados e fatura mensal. É uma ótima oportunidade para upgrade!",
+    "metadata": {
+      "category": "Portabilidade",
+      "question": "Posso portar um número pré-pago para pós-pago na Hello?",
+      "keywords": ["pré-pago", "pós-pago", "mudar modalidade", "prepago para pospago"],
+      "type": "faq",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "fatura-001",
+    "text": "Como visualizar minha fatura? Você pode visualizar sua fatura pelo aplicativo Hello, no site (área do cliente) ou recebê-la por e-mail. A fatura fica disponível até 5 dias antes do vencimento. No app, você também acompanha o consumo em tempo real e pode configurar alertas de uso de internet e minutos.",
+    "metadata": {
+      "category": "Fatura",
+      "question": "Como visualizar minha fatura?",
+      "keywords": ["fatura", "conta", "visualizar", "ver fatura", "app", "site"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "fatura-002",
+    "text": "Quais são as formas de pagamento? Aceitamos débito automático em conta corrente ou cartão de crédito, boleto bancário, PIX e pagamento nos principais bancos e lotéricas. O débito automático garante que você não perca o vencimento e ainda pode ter desconto especial. A configuração do débito automático pode ser feita pelo app ou site.",
+    "metadata": {
+      "category": "Fatura",
+      "question": "Quais são as formas de pagamento?",
+      "keywords": ["pagamento", "formas de pagamento", "débito automático", "boleto", "pix", "cartão"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "fatura-003",
+    "text": "O que fazer se minha fatura vier com valor incorreto? Entre em contato imediatamente com nosso suporte pelo 0800 123 4567, pelo chat no site ou app. Nossa equipe irá analisar sua fatura detalhadamente e, se houver erro, faremos o ajuste e devolução do valor cobrado a mais na próxima fatura. Você também pode contestar valores através da área do cliente no site.",
+    "metadata": {
+      "category": "Fatura",
+      "question": "O que fazer se minha fatura vier com valor incorreto?",
+      "keywords": ["fatura errada", "valor incorreto", "contestar", "reclamar fatura", "erro cobrança"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "fatura-004",
+    "text": "Posso parcelar minha fatura atrasada? Sim! Se você estiver com dificuldades para pagar a fatura, entre em contato conosco. Oferecemos opções de parcelamento e renegociação de débitos. O importante é não deixar acumular, pois após 60 dias de atraso sua linha pode ser suspensa. Estamos aqui para ajudar a encontrar a melhor solução.",
+    "metadata": {
+      "category": "Fatura",
+      "question": "Posso parcelar minha fatura atrasada?",
+      "keywords": ["parcelar", "fatura atrasada", "débito", "renegociar", "atraso"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "tecnico-001",
+    "text": "Meu celular não está pegando internet, o que fazer? Primeiro, verifique se os dados móveis estão ativados e se você tem saldo de internet disponível. Reinicie o aparelho e verifique se o APN está configurado corretamente (você encontra as configurações no nosso site). Se o problema persistir, entre em contato com nosso suporte técnico disponível 24h pelo 0800 123 4567.",
+    "metadata": {
+      "category": "Suporte Técnico",
+      "question": "Meu celular não está pegando internet, o que fazer?",
+      "keywords": ["sem internet", "não pega internet", "dados móveis", "problema internet", "não conecta"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "tecnico-002",
+    "text": "Como configurar a internet no meu celular? Normalmente a configuração é automática. Mas se necessário, você pode configurar manualmente. Acesse: Configurações > Redes Móveis > Nomes de pontos de acesso (APN). Use os dados: APN: hello.br | Nome de usuário: hello | Senha: hello. Salve e reinicie o aparelho. Se precisar de ajuda, nosso suporte técnico pode auxiliar.",
+    "metadata": {
+      "category": "Suporte Técnico",
+      "question": "Como configurar a internet no meu celular?",
+      "keywords": ["configurar internet", "apn", "configuração manual", "internet móvel", "dados"],
+      "type": "faq",
+      "priority": "high",
+      "apn_settings": {
+        "apn": "hello.br",
+        "username": "hello",
+        "password": "hello"
+      }
+    }
+  },
+  {
+    "id": "tecnico-003",
+    "text": "Perdi ou fui roubado, o que fazer? Entre em contato IMEDIATAMENTE pelo 0800 123 4567 (funciona mesmo com a linha bloqueada) ou pelo site/app de outro dispositivo. Faremos o bloqueio da linha em até 24h para evitar uso indevido. Você também deve registrar um Boletim de Ocorrência. Após o bloqueio, podemos enviar um novo chip com o mesmo número sem custo em casos de roubo.",
+    "metadata": {
+      "category": "Suporte Técnico",
+      "question": "Perdi ou fui roubado, o que fazer?",
+      "keywords": ["roubo", "perda", "celular roubado", "bloquear linha", "perdeu celular"],
+      "type": "faq",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "tecnico-004",
+    "text": "Como desbloquear meu aparelho? Se seu aparelho está bloqueado para outra operadora, você precisa solicitar o desbloqueio com a operadora atual (onde comprou o aparelho). Aparelhos comprados na Hello já vêm desbloqueados de fábrica. O desbloqueio é obrigatório por lei e gratuito. Após desbloqueado, nosso chip funcionará normalmente.",
+    "metadata": {
+      "category": "Suporte Técnico",
+      "question": "Como desbloquear meu aparelho?",
+      "keywords": ["desbloquear", "aparelho bloqueado", "unlock", "chip não funciona", "bloqueio operadora"],
+      "type": "faq",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "tecnico-005",
+    "text": "Chip não reconhecido, o que fazer? Primeiro, retire o chip, limpe-o com um pano seco e reinsira. Reinicie o aparelho. Verifique se o chip está inserido corretamente e se o aparelho não está no modo avião. Teste o chip em outro aparelho para verificar se o problema é no chip ou no aparelho. Se o chip não funcionar em nenhum aparelho, entre em contato para solicitar a 2ª via gratuita.",
+    "metadata": {
+      "category": "Suporte Técnico",
+      "question": "Chip não reconhecido, o que fazer?",
+      "keywords": ["chip não reconhecido", "sem sinal", "chip não funciona", "erro chip", "segunda via"],
+      "type": "faq",
+      "priority": "high"
+    }
+  }
+]

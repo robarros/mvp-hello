@@ -8,6 +8,7 @@ RUN rm -rf /usr/share/nginx/html/*
 COPY index.html /usr/share/nginx/html/
 COPY styles.css /usr/share/nginx/html/
 COPY script.js /usr/share/nginx/html/
+COPY n8n-chat-custom.css /usr/share/nginx/html/
 COPY hello.jpeg /usr/share/nginx/html/
 COPY README.md /usr/share/nginx/html/
 

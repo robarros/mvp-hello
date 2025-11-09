@@ -84,16 +84,20 @@ const chatMessages = document.getElementById('chatMessages');
 // N8N Webhook URL - Substituir com sua URL do N8N quando configurar
 const N8N_WEBHOOK_URL = 'https://seu-n8n-instance.com/webhook/chat';
 
-// Toggle chatbot
-chatButton.addEventListener('click', () => {
-    chatbot.classList.add('active');
-    chatButton.style.display = 'none';
-});
+// Toggle chatbot - only if elements exist
+if (chatButton && chatbot) {
+    chatButton.addEventListener('click', () => {
+        chatbot.classList.add('active');
+        chatButton.style.display = 'none';
+    });
+}
 
-closeChat.addEventListener('click', () => {
-    chatbot.classList.remove('active');
-    chatButton.style.display = 'flex';
-});
+if (closeChat && chatbot && chatButton) {
+    closeChat.addEventListener('click', () => {
+        chatbot.classList.remove('active');
+        chatButton.style.display = 'flex';
+    });
+}
 
 // Send message function
 async function sendChatMessage() {
@@ -260,15 +264,19 @@ function scrollToBottom() {
     chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
-// Send message on button click
-sendMessage.addEventListener('click', sendChatMessage);
+// Send message on button click - only if elements exist
+if (sendMessage) {
+    sendMessage.addEventListener('click', sendChatMessage);
+}
 
-// Send message on Enter key
-chatInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
-        sendChatMessage();
-    }
-});
+// Send message on Enter key - only if element exists
+if (chatInput) {
+    chatInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            sendChatMessage();
+        }
+    });
+}
 
 // Contact Form
 const contactForm = document.getElementById('contactForm');
