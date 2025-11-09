@@ -222,7 +222,7 @@ function getBotResponse(message) {
     
     // Contato
     if (lowerMessage.includes('contato') || lowerMessage.includes('telefone') || lowerMessage.includes('ligar')) {
-        return 'Você pode entrar em contato conosco através do telefone 0800 123 4567 ou email contato@hello.com.br. Estamos disponíveis 24h por dia!';
+        return 'Você pode entrar em contato conosco através dos seguintes canais:\n\n📱 Central de Relacionamento (Móvel): 1052 ou *8486 (24 horas)\n️ Ouvidoria: 0800 775 1212 (Seg-Sex 8h-18h PJ / 8h-19h PF)\n💬 WhatsApp: 24 horas\n📧 Email: contato@hello.com.br\n\nEstamos sempre disponíveis para ajudá-lo!';
     }
     
     // Cobertura
@@ -237,7 +237,7 @@ function getBotResponse(message) {
     
     // Horário
     if (lowerMessage.includes('horário') || lowerMessage.includes('quando') || lowerMessage.includes('atendimento')) {
-        return 'Nosso atendimento funciona 24 horas por dia, 7 dias por semana. Estamos sempre disponíveis para ajudá-lo!';
+        return 'Nossos horários de atendimento:\n\n📱 Central de Relacionamento (Móvel): 24 horas, todos os dias (1052 ou *8486)\n WhatsApp: 24 horas, todos os dias\n🛡️ Ouvidoria: Segunda a sexta-feira, das 8h às 18h (PJ) e 8h às 19h (PF) - 0800 775 1212\n🏪 Lojas físicas: Seg-Sáb 9h-20h, Dom 10h-18h';
     }
     
     // Sobre a empresa
@@ -489,17 +489,12 @@ document.querySelectorAll('section h2').forEach(title => {
 // FAQ interativo: expandir/collapse ao clicar na pergunta
 document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', () => {
-        const answer = question.nextElementSibling;
-        if (answer && answer.classList.contains('faq-answer')) {
-            answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
-            question.classList.toggle('active');
+        const faqItem = question.closest('.faq-item');
+        if (faqItem) {
+            // Toggle active class on the faq-item
+            faqItem.classList.toggle('active');
         }
     });
-});
-
-// Inicialmente esconde todas as respostas
-document.querySelectorAll('.faq-answer').forEach(answer => {
-    answer.style.display = 'none';
 });
 
 // FAQ Category Filter

@@ -656,18 +656,24 @@ header {
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: all 0.4s ease;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 1.5rem;
 }
 
 .faq-item.active .faq-answer {
-    max-height: 500px;
-    padding: 0 1.5rem 1.5rem;
+    max-height: 2000px;
+    padding: 1rem 1.5rem 1.5rem;
 }
 
 .faq-answer p {
     line-height: 1.8;
     color: var(--text-color);
     margin: 0;
+}
+
+.faq-answer p strong {
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 .faq-cta {

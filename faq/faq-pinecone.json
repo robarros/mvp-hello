@@ -89,64 +89,75 @@
   },
   {
     "id": "atendimento-001",
-    "text": "Quais são os canais de atendimento disponíveis? Oferecemos diversos canais para seu conforto: Telefone: 0800 123 4567 (ligação gratuita); WhatsApp: (11) 98765-4321; Chat online: Disponível no site e aplicativo Hello; E-mail: contato@hello.com.br; Lojas físicas: Consulte nossas lojas mais próximas no site; App Hello: Disponível para iOS e Android com área do cliente completa; Redes sociais: Atendimento via direct no Instagram e Facebook.",
+    "text": "Quais são os canais de atendimento disponíveis? Oferecemos diversos canais para seu conforto: Central de Relacionamento (Móvel): 1052 ou *8486 do seu celular Hello (atendimento 24 horas); Ouvidoria: 0800 775 1212; WhatsApp: Funciona 24 horas, todos os dias; Chat online: Disponível no site e aplicativo Hello; E-mail: contato@hello.com.br; Lojas físicas: Consulte nossas lojas mais próximas no site; App Hello: Disponível para iOS e Android com área do cliente completa.",
     "metadata": {
       "category": "Atendimento",
       "question": "Quais são os canais de atendimento disponíveis?",
-      "keywords": ["atendimento", "canais", "contato", "telefone", "whatsapp", "chat", "email", "0800"],
+      "keywords": ["atendimento", "canais", "contato", "telefone", "whatsapp", "chat", "email", "1052", "8486", "ouvidoria"],
       "type": "faq",
       "priority": "high",
       "contact_info": {
-        "phone": "0800 123 4567",
-        "whatsapp": "(11) 98765-4321",
+        "phone_mobile": "1052",
+        "phone_mobile_shortcode": "*8486",
+        "ouvidoria": "0800 775 1212",
         "email": "contato@hello.com.br"
       }
     }
   },
   {
     "id": "atendimento-002",
-    "text": "Qual o horário de funcionamento do atendimento? Nosso atendimento funciona 24 horas por dia, 7 dias por semana, incluindo feriados! Você pode ligar para o 0800 123 4567, usar o chat online ou o WhatsApp a qualquer momento. Nossas lojas físicas funcionam de segunda a sábado, das 9h às 20h, e aos domingos das 10h às 18h. O app e área do cliente no site estão disponíveis 24h para consultas, pagamentos e contratações.",
+    "text": "Qual o horário de funcionamento do atendimento? Central de Relacionamento (Móvel): Atendimento 24 horas, todos os dias, através do número 1052 ou discando *8486 do seu celular Hello. Ouvidoria: Segunda a sexta-feira, das 8h às 18h para pessoa jurídica e das 8h às 19h para pessoa física (exceto feriados) - Telefone: 0800 775 1212. WhatsApp: Funciona 24 horas, todos os dias. Nossas lojas físicas funcionam de segunda a sábado, das 9h às 20h, e aos domingos das 10h às 18h. O app e área do cliente no site estão disponíveis 24h para consultas, pagamentos e contratações.",
     "metadata": {
       "category": "Atendimento",
       "question": "Qual o horário de funcionamento do atendimento?",
-      "keywords": ["horário", "funcionamento", "24 horas", "lojas", "atendimento", "quando"],
+      "keywords": ["horário", "funcionamento", "24 horas", "lojas", "atendimento", "quando", "ouvidoria"],
       "type": "faq",
-      "priority": "high"
+      "priority": "high",
+      "hours": {
+        "mobile": "24/7",
+        "whatsapp": "24/7",
+        "ouvidoria_pj": "Seg-Sex 8h-18h",
+        "ouvidoria_pf": "Seg-Sex 8h-19h",
+        "stores": "Seg-Sáb 9h-20h, Dom 10h-18h"
+      }
     }
   },
   {
     "id": "atendimento-003",
-    "text": "Como funciona o suporte técnico? Nosso suporte técnico está disponível 24h pelo 0800 123 4567 (opção 2) ou chat online. Para problemas com internet, ligações, SMS ou configurações de aparelho, nossa equipe especializada pode ajudar remotamente. Em casos mais complexos, agendamos visita técnica gratuita ou orientamos sobre assistências técnicas autorizadas. Clientes dos planos Premium e Ultra têm atendimento prioritário com tempo médio de espera de apenas 30 segundos.",
+    "text": "Como funciona o suporte técnico? Nosso suporte técnico está disponível 24h pelo 1052, *8486 (do seu celular Hello) ou chat online. Para problemas com internet, ligações, SMS ou configurações de aparelho, nossa equipe especializada pode ajudar remotamente. Em casos mais complexos, agendamos visita técnica gratuita ou orientamos sobre assistências técnicas autorizadas. Clientes dos planos Premium e Ultra têm atendimento prioritário com tempo médio de espera de apenas 30 segundos.",
     "metadata": {
       "category": "Atendimento",
       "question": "Como funciona o suporte técnico?",
-      "keywords": ["suporte técnico", "ajuda", "problemas", "internet", "configuração", "visita técnica"],
+      "keywords": ["suporte técnico", "ajuda", "problemas", "internet", "configuração", "visita técnica", "1052", "8486"],
       "type": "faq",
       "priority": "high"
     }
   },
   {
     "id": "atendimento-004",
-    "text": "Posso ser atendido em outro idioma? Sim! Além do português, oferecemos atendimento em inglês, espanhol e mandarim pelo 0800 123 4567. Ao ligar, informe ao atendente o idioma de sua preferência. No app e site, você também pode selecionar o idioma de navegação. Este serviço está incluído em todos os planos sem custo adicional.",
+    "text": "Posso ser atendido em outro idioma? Sim! Além do português, oferecemos atendimento em inglês, espanhol e mandarim pelo 1052 ou *8486. Ao ligar, informe ao atendente o idioma de sua preferência. No app e site, você também pode selecionar o idioma de navegação. Este serviço está incluído em todos os planos sem custo adicional.",
     "metadata": {
       "category": "Atendimento",
       "question": "Posso ser atendido em outro idioma?",
-      "keywords": ["idioma", "inglês", "espanhol", "mandarim", "língua estrangeira", "internacional"],
+      "keywords": ["idioma", "inglês", "espanhol", "mandarim", "língua estrangeira", "internacional", "1052", "8486"],
       "type": "faq",
       "priority": "medium"
     }
   },
   {
     "id": "atendimento-005",
-    "text": "Como faço para elogiar ou reclamar do atendimento? Sua opinião é muito importante! Para elogios, reclamações ou sugestões, acesse a área 'Ouvidoria' no site ou app. Você também pode enviar e-mail para ouvidoria@hello.com.br ou ligar para o 0800 123 4567 (opção 9). Respondemos todas as manifestações em até 48 horas. Casos não resolvidos podem ser encaminhados para a Anatel através do nosso código de operadora disponível no site.",
+    "text": "Como faço para elogiar ou reclamar do atendimento? Sua opinião é muito importante! Para elogios, reclamações ou sugestões, acesse a área 'Ouvidoria' no site ou app. Você também pode enviar e-mail para ouvidoria@hello.com.br ou ligar para a Ouvidoria: 0800 775 1212 (segunda a sexta-feira, das 8h às 18h para pessoa jurídica e das 8h às 19h para pessoa física, exceto feriados). Respondemos todas as manifestações em até 48 horas. Casos não resolvidos podem ser encaminhados para a Anatel através do nosso código de operadora disponível no site.",
     "metadata": {
       "category": "Atendimento",
       "question": "Como faço para elogiar ou reclamar do atendimento?",
-      "keywords": ["reclamação", "elogio", "ouvidoria", "sugestão", "anatel", "feedback"],
+      "keywords": ["reclamação", "elogio", "ouvidoria", "sugestão", "anatel", "feedback", "0800 775 1212"],
       "type": "faq",
       "priority": "medium",
       "contact_info": {
-        "ouvidoria": "ouvidoria@hello.com.br"
+        "ouvidoria_phone": "0800 775 1212",
+        "ouvidoria_email": "ouvidoria@hello.com.br",
+        "ouvidoria_hours_pj": "Seg-Sex 8h-18h",
+        "ouvidoria_hours_pf": "Seg-Sex 8h-19h"
       }
     }
   },
@@ -257,11 +268,11 @@
   },
   {
     "id": "cobertura-001",
-    "text": "Como verificar a cobertura na minha região? Acesse nosso site e vá na seção 'Cobertura'. Digite seu CEP ou endereço completo para verificar a disponibilidade de cobertura 4G e 5G na sua região. Você também pode ligar para 0800 123 4567 e consultar com um de nossos atendentes. Nossa cobertura está em constante expansão.",
+    "text": "Como verificar a cobertura na minha região? Acesse nosso site e vá na seção 'Cobertura'. Digite seu CEP ou endereço completo para verificar a disponibilidade de cobertura 4G e 5G na sua região. Você também pode ligar para 1052 (ou *8486 do seu celular Hello) e consultar com um de nossos atendentes. Nossa cobertura está em constante expansão.",
     "metadata": {
       "category": "Cobertura",
       "question": "Como verificar a cobertura na minha região?",
-      "keywords": ["cobertura", "disponibilidade", "região", "cep", "consultar cobertura"],
+      "keywords": ["cobertura", "disponibilidade", "região", "cep", "consultar cobertura", "1052", "8486"],
       "type": "faq",
       "priority": "high"
     }
@@ -367,11 +378,11 @@
   },
   {
     "id": "portabilidade-008",
-    "text": "Posso cancelar a portabilidade depois de solicitada? Sim, você pode cancelar a portabilidade antes dela ser concluída. Entre em contato com nosso atendimento pelo 0800 123 4567 ou pelo chat e informe que deseja cancelar o processo. Se a portabilidade ainda não foi efetivada, faremos o cancelamento imediatamente e você continuará com sua operadora atual. Porém, se você já enviou o SMS 'PORT' e mudou de ideia, é importante cancelar o quanto antes. Após a conclusão da portabilidade, para voltar à operadora anterior você precisará fazer uma nova portabilidade.",
+    "text": "Posso cancelar a portabilidade depois de solicitada? Sim, você pode cancelar a portabilidade antes dela ser concluída. Entre em contato com nosso atendimento pelo 1052 (ou *8486 do seu celular) ou pelo chat e informe que deseja cancelar o processo. Se a portabilidade ainda não foi efetivada, faremos o cancelamento imediatamente e você continuará com sua operadora atual. Porém, se você já enviou o SMS 'PORT' e mudou de ideia, é importante cancelar o quanto antes. Após a conclusão da portabilidade, para voltar à operadora anterior você precisará fazer uma nova portabilidade.",
     "metadata": {
       "category": "Portabilidade",
       "question": "Posso cancelar a portabilidade depois de solicitada?",
-      "keywords": ["cancelar", "desistir", "voltar atrás", "parar processo"],
+      "keywords": ["cancelar", "desistir", "voltar atrás", "parar processo", "1052", "8486"],
       "type": "faq",
       "priority": "medium"
     }
@@ -433,33 +444,33 @@
   },
   {
     "id": "fatura-003",
-    "text": "O que fazer se minha fatura vier com valor incorreto? Entre em contato imediatamente com nosso suporte pelo 0800 123 4567, pelo chat no site ou app. Nossa equipe irá analisar sua fatura detalhadamente e, se houver erro, faremos o ajuste e devolução do valor cobrado a mais na próxima fatura. Você também pode contestar valores através da área do cliente no site.",
+    "text": "O que fazer se minha fatura vier com valor incorreto? Entre em contato imediatamente com nosso suporte pelo 1052 (ou *8486 do seu celular Hello), pelo chat no site ou app. Nossa equipe irá analisar sua fatura detalhadamente e, se houver erro, faremos o ajuste e devolução do valor cobrado a mais na próxima fatura. Você também pode contestar valores através da área do cliente no site.",
     "metadata": {
       "category": "Fatura",
       "question": "O que fazer se minha fatura vier com valor incorreto?",
-      "keywords": ["fatura errada", "valor incorreto", "contestar", "reclamar fatura", "erro cobrança"],
+      "keywords": ["fatura errada", "valor incorreto", "contestar", "reclamar fatura", "erro cobrança", "1052", "8486"],
       "type": "faq",
       "priority": "high"
     }
   },
   {
     "id": "fatura-004",
-    "text": "Posso parcelar minha fatura atrasada? Sim! Se você estiver com dificuldades para pagar a fatura, entre em contato conosco. Oferecemos opções de parcelamento e renegociação de débitos. O importante é não deixar acumular, pois após 60 dias de atraso sua linha pode ser suspensa. Estamos aqui para ajudar a encontrar a melhor solução.",
+    "text": "Posso parcelar minha fatura atrasada? Sim! Se você estiver com dificuldades para pagar a fatura, entre em contato conosco pelo 1052 ou *8486. Oferecemos opções de parcelamento e renegociação de débitos. O importante é não deixar acumular, pois após 60 dias de atraso sua linha pode ser suspensa. Estamos aqui para ajudar a encontrar a melhor solução.",
     "metadata": {
       "category": "Fatura",
       "question": "Posso parcelar minha fatura atrasada?",
-      "keywords": ["parcelar", "fatura atrasada", "débito", "renegociar", "atraso"],
+      "keywords": ["parcelar", "fatura atrasada", "débito", "renegociar", "atraso", "1052", "8486"],
       "type": "faq",
       "priority": "high"
     }
   },
   {
     "id": "tecnico-001",
-    "text": "Meu celular não está pegando internet, o que fazer? Primeiro, verifique se os dados móveis estão ativados e se você tem saldo de internet disponível. Reinicie o aparelho e verifique se o APN está configurado corretamente (você encontra as configurações no nosso site). Se o problema persistir, entre em contato com nosso suporte técnico disponível 24h pelo 0800 123 4567.",
+    "text": "Meu celular não está pegando internet, o que fazer? Primeiro, verifique se os dados móveis estão ativados e se você tem saldo de internet disponível. Reinicie o aparelho e verifique se o APN está configurado corretamente (você encontra as configurações no nosso site). Se o problema persistir, entre em contato com nosso suporte técnico disponível 24h pelo 1052 ou *8486 do seu celular Hello.",
     "metadata": {
       "category": "Suporte Técnico",
       "question": "Meu celular não está pegando internet, o que fazer?",
-      "keywords": ["sem internet", "não pega internet", "dados móveis", "problema internet", "não conecta"],
+      "keywords": ["sem internet", "não pega internet", "dados móveis", "problema internet", "não conecta", "1052", "8486"],
       "type": "faq",
       "priority": "high"
     }
@@ -482,11 +493,11 @@
   },
   {
     "id": "tecnico-003",
-    "text": "Perdi ou fui roubado, o que fazer? Entre em contato IMEDIATAMENTE pelo 0800 123 4567 (funciona mesmo com a linha bloqueada) ou pelo site/app de outro dispositivo. Faremos o bloqueio da linha em até 24h para evitar uso indevido. Você também deve registrar um Boletim de Ocorrência. Após o bloqueio, podemos enviar um novo chip com o mesmo número sem custo em casos de roubo.",
+    "text": "Perdi ou fui roubado, o que fazer? Entre em contato IMEDIATAMENTE pelo 1052 ou *8486 (funciona mesmo com a linha bloqueada) ou pelo site/app de outro dispositivo. Faremos o bloqueio da linha em até 24h para evitar uso indevido. Você também deve registrar um Boletim de Ocorrência. Após o bloqueio, podemos enviar um novo chip com o mesmo número sem custo em casos de roubo.",
     "metadata": {
       "category": "Suporte Técnico",
       "question": "Perdi ou fui roubado, o que fazer?",
-      "keywords": ["roubo", "perda", "celular roubado", "bloquear linha", "perdeu celular"],
+      "keywords": ["roubo", "perda", "celular roubado", "bloquear linha", "perdeu celular", "1052", "8486"],
       "type": "faq",
       "priority": "high"
     }
