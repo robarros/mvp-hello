@@ -278,6 +278,55 @@ if (chatInput) {
     });
 }
 
+// Phone Input Mask - Format as (XX) XXXXX-XXXX or (XX) XXXX-XXXX
+const phoneInput = document.querySelector('input[type="tel"]');
+if (phoneInput) {
+    phoneInput.addEventListener('input', (e) => {
+        let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não é dígito
+        
+        // Limita a 11 dígitos (DDD + número)
+        value = value.substring(0, 11);
+        
+        // Aplica a máscara
+        if (value.length > 0) {
+            if (value.length <= 2) {
+                // Apenas DDD
+                value = `(${value}`;
+            } else if (value.length <= 6) {
+                // DDD + primeiros dígitos
+                value = `(${value.substring(0, 2)}) ${value.substring(2)}`;
+            } else if (value.length <= 10) {
+                // Formato: (XX) XXXX-XXXX
+                value = `(${value.substring(0, 2)}) ${value.substring(2, 6)}-${value.substring(6)}`;
+            } else {
+                // Formato: (XX) XXXXX-XXXX (celular com 9 dígitos)
+                value = `(${value.substring(0, 2)}) ${value.substring(2, 7)}-${value.substring(7)}`;
+            }
+        }
+        
+        e.target.value = value;
+    });
+    
+    // Permite deletar facilmente
+    phoneInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Backspace') {
+            const value = e.target.value;
+            const cursorPosition = e.target.selectionStart;
+            
+            // Se o cursor está logo após um caractere de formatação, remove o dígito anterior
+            if (value[cursorPosition - 1] === ' ' || value[cursorPosition - 1] === ')' || value[cursorPosition - 1] === '-') {
+                e.preventDefault();
+                const newValue = value.substring(0, cursorPosition - 2) + value.substring(cursorPosition);
+                e.target.value = newValue;
+                
+                // Re-aplica a formatação
+                const event = new Event('input', { bubbles: true });
+                e.target.dispatchEvent(event);
+            }
+        }
+    });
+}
+
 // Contact Form
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
@@ -304,9 +353,9 @@ if (contactForm) {
         }
         
         // Validate phone (basic Brazilian phone validation)
-        const phoneRegex = /^[\d\s\(\)\-\+]+$/;
-        if (!phoneRegex.test(phone) || phone.replace(/\D/g, '').length < 10) {
-            alert('Por favor, insira um telefone válido.');
+        const phoneDigits = phone.replace(/\D/g, ''); // Remove formatação
+        if (phoneDigits.length < 10 || phoneDigits.length > 11) {
+            alert('Por favor, insira um telefone válido com DDD.');
             return;
         }
         
@@ -389,6 +438,25 @@ if (talkButton) {
     });
 }
 
+// Abrir chatboot ao clicar no botão Falar com Atendente
+// Abrir chatboot ao clicar em qualquer botão "Falar com Atendente"
+
+// Polling para garantir que o botão do n8n chat existe antes de adicionar listeners
+let chatBootInterval = setInterval(() => {
+    const chatToggle = document.querySelector('#n8n-chat button');
+    if (chatToggle) {
+        document.querySelectorAll('button').forEach(btn => {
+            if (btn.textContent.trim() === 'Falar com Atendente' && !btn._chatBootListener) {
+                btn.addEventListener('click', () => {
+                    chatToggle.click();
+                });
+                btn._chatBootListener = true;
+            }
+        });
+        clearInterval(chatBootInterval);
+    }
+}, 200);
+
 // Animation on scroll
 const observerOptions = {
     threshold: 0.1,
@@ -417,3 +485,81 @@ document.querySelectorAll('section h2').forEach(title => {
     title.style.opacity = '0';
     observer.observe(title);
 });
+
+// FAQ interativo: expandir/collapse ao clicar na pergunta
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        if (answer && answer.classList.contains('faq-answer')) {
+            answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+            question.classList.toggle('active');
+        }
+    });
+});
+
+// Inicialmente esconde todas as respostas
+document.querySelectorAll('.faq-answer').forEach(answer => {
+    answer.style.display = 'none';
+});
+
+// FAQ Category Filter
+const faqCategoryButtons = document.querySelectorAll('.faq-category-btn');
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqCategoryButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        
+        // Remove active class from all buttons
+        faqCategoryButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        // Filter FAQ items
+        faqItems.forEach(item => {
+            const itemCategory = item.getAttribute('data-category');
+            
+            if (category === 'all' || itemCategory === category) {
+                item.style.display = 'block';
+                // Add fade-in animation
+                item.style.animation = 'fadeIn 0.5s ease';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+
+// FAQ Search Functionality
+const faqSearchInput = document.getElementById('faqSearch');
+
+if (faqSearchInput) {
+    faqSearchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        let hasVisibleItems = false;
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question h3').textContent.toLowerCase();
+            const answer = item.querySelector('.faq-answer p').textContent.toLowerCase();
+            
+            if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                item.style.display = 'block';
+                item.style.animation = 'fadeIn 0.5s ease';
+                hasVisibleItems = true;
+            } else {
+                item.style.display = 'none';
+            }
+        });
+        
+        // Reset category filter when searching
+        if (searchTerm !== '') {
+            faqCategoryButtons.forEach(btn => btn.classList.remove('active'));
+        } else {
+            // Restore "Todas" as active when search is cleared
+            const allButton = document.querySelector('.faq-category-btn[data-category="all"]');
+            if (allButton) allButton.classList.add('active');
+            faqItems.forEach(item => item.style.display = 'block');
+        }
+    });
+}
