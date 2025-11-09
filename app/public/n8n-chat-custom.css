@@ -1,0 +1,723 @@
+/* Customizações do n8n Chat Widget para Hello Operadora */
+
+:root {
+    /* Cores primárias da Hello */
+    --chat--color--primary: #e74266;
+    --chat--color--primary-shade-50: #db4061;
+    --chat--color--primary--shade-100: #cf3c5c;
+    --chat--color--secondary: #20b69e;
+    --chat--color-secondary-shade-50: #1ca08a;
+    
+    /* Cores básicas */
+    --chat--color-white: #ffffff;
+    --chat--color-light: #f2f4f8;
+    --chat--color-light-shade-50: #e6e9f1;
+    --chat--color-light-shade-100: #c2c5cc;
+    --chat--color-medium: #d2d4d9;
+    --chat--color-dark: #101330;
+    --chat--color-disabled: #777980;
+    --chat--color-typing: #404040;
+    
+    /* Espaçamento e bordas */
+    --chat--spacing: 1rem;
+    --chat--border-radius: 12px;
+    --chat--transition-duration: 0.3s;
+    
+    /* Tamanho da janela */
+    --chat--window--width: 360px;
+    --chat--window--height: 520px;
+    
+    /* Header customizado */
+    --chat--header-height: auto;
+    --chat--header--padding: 1.5rem var(--chat--spacing);
+    --chat--header--background: linear-gradient(135deg, #e74266 0%, #cf3c5c 100%);
+    --chat--header--color: var(--chat--color-white);
+    --chat--header--border-top: none;
+    --chat--header--border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    --chat--heading--font-size: 1.5em;
+    --chat--subtitle--font-size: 0.9em;
+    --chat--subtitle--line-height: 1.6;
+    
+    /* Input de texto */
+    --chat--textarea--height: 56px;
+    --chat--textarea--background: var(--chat--color-white);
+    --chat--textarea--color: var(--chat--color-dark);
+    --chat--textarea--border: 2px solid var(--chat--color-medium);
+    --chat--textarea--focus--border: 2px solid var(--chat--color--primary);
+    --chat--textarea--placeholder-color: var(--chat--color-disabled);
+    
+    /* Mensagens */
+    --chat--message--font-size: 0.95rem;
+    --chat--message--padding: 1rem;
+    --chat--message--border-radius: 12px;
+    --chat--message-line-height: 1.6;
+    
+    /* Mensagem do bot */
+    --chat--message--bot--background: var(--chat--color-light);
+    --chat--message--bot--color: var(--chat--color-dark);
+    --chat--message--bot--border: 1px solid var(--chat--color-light-shade-50);
+    
+    /* Mensagem do usuário */
+    --chat--message--user--background: var(--chat--color--primary);
+    --chat--message--user--color: var(--chat--color-white);
+    --chat--message--user--border: none;
+    
+    /* Código em mensagens */
+    --chat--message--pre--background: rgba(0, 0, 0, 0.05);
+    
+    /* Botão toggle (flutuante) */
+    --chat--toggle--background: var(--chat--color--primary);
+    --chat--toggle--hover--background: var(--chat--color--primary-shade-50);
+    --chat--toggle--active--background: var(--chat--color--primary--shade-100);
+    --chat--toggle--color: var(--chat--color-white);
+    --chat--toggle--size: 64px;
+}
+
+/* Ajustes adicionais para integração com o tema Hello */
+
+/* Adicionar sombra no botão flutuante */
+#n8n-chat button[class*="toggle"] {
+    box-shadow: 0 4px 20px rgba(231, 66, 102, 0.4);
+    transition: all var(--chat--transition-duration) ease;
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    z-index: 9999 !important;
+}
+
+#n8n-chat button[class*="toggle"]:hover {
+    box-shadow: 0 6px 30px rgba(231, 66, 102, 0.6);
+    transform: scale(1.05);
+}
+
+/* Adicionar animação de entrada suave na janela do chat */
+#n8n-chat div[class*="window"] {
+    animation: slideInUp 0.3s ease-out;
+    position: fixed !important;
+    bottom: 110px !important;
+    right: 30px !important;
+    width: 360px !important;
+    max-width: calc(100vw - 60px) !important;
+    height: 520px !important;
+    max-height: calc(100vh - 150px) !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+}
+
+/* Ajuste para mobile */
+@media (max-width: 768px) {
+    #n8n-chat div[class*="window"] {
+        bottom: 100px !important;
+        right: 15px !important;
+        left: 15px !important;
+        width: calc(100vw - 30px) !important;
+        max-width: none !important;
+        height: calc(100vh - 120px) !important;
+    }
+    
+    #n8n-chat button[class*="toggle"] {
+        bottom: 20px !important;
+        right: 20px !important;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilizar scrollbar do chat */
+#n8n-chat div[class*="messages"]::-webkit-scrollbar {
+    width: 6px;
+}
+
+#n8n-chat div[class*="messages"]::-webkit-scrollbar-track {
+    background: var(--chat--color-light);
+}
+
+#n8n-chat div[class*="messages"]::-webkit-scrollbar-thumb {
+    background: var(--chat--color-medium);
+    border-radius: 3px;
+}
+
+#n8n-chat div[class*="messages"]::-webkit-scrollbar-thumb:hover {
+    background: var(--chat--color--primary);
+}
+
+/* Adicionar efeito hover nos links dentro das mensagens */
+#n8n-chat a {
+    color: var(--chat--color--primary);
+    text-decoration: underline;
+    transition: color var(--chat--transition-duration) ease;
+}
+
+#n8n-chat a:hover {
+    color: var(--chat--color--primary-shade-50);
+}
+
+/* Indicador de digitação customizado */
+#n8n-chat div[class*="typing"] {
+    color: var(--chat--color-typing);
+    font-style: italic;
+}
+
+/* Ajuste para mobile */
+@media (max-width: 768px) {
+    :root {
+        --chat--window--width: 100vw;
+        --chat--window--height: 100vh;
+        --chat--toggle--size: 56px;
+    }
+    
+    #n8n-chat div[class*="window"] {
+        bottom: 0 !important;
+        right: 0 !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        height: 100vh !important;
+        max-height: 100vh !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+    }
+    
+    #n8n-chat button[class*="toggle"] {
+        bottom: 15px !important;
+        right: 15px !important;
+        width: 56px !important;
+        height: 56px !important;
+        box-shadow: 0 4px 16px rgba(231, 66, 102, 0.5) !important;
+    }
+
+    /* Header do chat em mobile */
+    #n8n-chat div[class*="header"] {
+        padding: 1.25rem 1rem !important;
+    }
+
+    /* Mensagens em mobile */
+    #n8n-chat div[class*="message"] {
+        max-width: 85% !important;
+        font-size: 0.95rem !important;
+    }
+
+    /* Input em mobile */
+    #n8n-chat div[class*="footer"],
+    #n8n-chat div[class*="Footer"],
+    #n8n-chat div[class*="inputArea"] {
+        padding: 0.75rem !important;
+    }
+
+    #n8n-chat textarea,
+    #n8n-chat input[type="text"] {
+        font-size: 16px !important; /* Evita zoom automático no iOS */
+        min-height: 48px !important;
+    }
+
+    #n8n-chat button[type="submit"],
+    #n8n-chat button[class*="send"] {
+        min-width: 44px !important;
+        min-height: 44px !important;
+        padding: 0.5rem !important;
+    }
+
+    /* Tela de boas-vindas em mobile */
+    #n8n-chat div[class*="welcomeScreen"],
+    #n8n-chat div[class*="GetStarted"] {
+        padding: 1.5rem 1rem !important;
+    }
+
+    #n8n-chat button[class*="getStarted"],
+    #n8n-chat button[class*="GetStarted"],
+    #n8n-chat div[class*="GetStarted"] button {
+        width: 100% !important;
+        max-width: 280px !important;
+        min-height: 52px !important;
+        font-size: 1.05rem !important;
+    }
+}
+
+/* Tablet Portrait (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    #n8n-chat div[class*="window"] {
+        width: 90vw !important;
+        max-width: 420px !important;
+        height: 85vh !important;
+        max-height: 600px !important;
+        bottom: 90px !important;
+        right: 5vw !important;
+        left: auto !important;
+        top: auto !important;
+        border-radius: 16px !important;
+    }
+
+    #n8n-chat button[class*="toggle"] {
+        bottom: 20px !important;
+        right: 20px !important;
+        width: 58px !important;
+        height: 58px !important;
+    }
+}
+
+/* Tablet Landscape (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    :root {
+        --chat--window--width: 380px;
+        --chat--window--height: 560px;
+        --chat--toggle--size: 60px;
+    }
+
+    #n8n-chat div[class*="window"] {
+        width: 380px !important;
+        max-width: calc(100vw - 80px) !important;
+        height: 560px !important;
+        max-height: calc(100vh - 160px) !important;
+        bottom: 100px !important;
+        right: 40px !important;
+    }
+    
+    #n8n-chat button[class*="toggle"] {
+        bottom: 25px !important;
+        right: 25px !important;
+        width: 60px !important;
+        height: 60px !important;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    #n8n-chat button[class*="toggle"] {
+        bottom: 12px !important;
+        right: 12px !important;
+        width: 52px !important;
+        height: 52px !important;
+    }
+
+    #n8n-chat div[class*="message"] {
+        font-size: 0.9rem !important;
+        padding: 0.85rem !important;
+    }
+
+    #n8n-chat div[class*="header"] h2 {
+        font-size: 1.15rem !important;
+    }
+
+    #n8n-chat div[class*="header"] p {
+        font-size: 0.85rem !important;
+    }
+}
+
+/* Extra Small Mobile (max-width: 320px) */
+@media (max-width: 320px) {
+    #n8n-chat button[class*="toggle"] {
+        width: 48px !important;
+        height: 48px !important;
+        bottom: 10px !important;
+        right: 10px !important;
+    }
+
+    #n8n-chat textarea,
+    #n8n-chat input[type="text"] {
+        font-size: 15px !important;
+        padding: 0.75rem !important;
+    }
+
+    #n8n-chat div[class*="message"] {
+        max-width: 90% !important;
+        font-size: 0.85rem !important;
+    }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    #n8n-chat button[class*="toggle"] {
+        bottom: 10px !important;
+        right: 10px !important;
+        width: 48px !important;
+        height: 48px !important;
+    }
+
+    #n8n-chat div[class*="window"] {
+        height: 100vh !important;
+        max-height: 100vh !important;
+    }
+
+    #n8n-chat div[class*="header"] {
+        padding: 1rem !important;
+    }
+
+    #n8n-chat div[class*="footer"] {
+        padding: 0.65rem !important;
+    }
+}
+
+/* Touch device specific improvements */
+@media (hover: none) and (pointer: coarse) {
+    #n8n-chat button[class*="toggle"] {
+        -webkit-tap-highlight-color: rgba(231, 66, 102, 0.2);
+        touch-action: manipulation;
+    }
+
+    #n8n-chat button[class*="toggle"]:active {
+        transform: scale(0.95);
+    }
+
+    #n8n-chat button[type="submit"]:active,
+    #n8n-chat button[class*="send"]:active {
+        transform: scale(0.95);
+    }
+
+    /* Aumentar área de toque dos botões */
+    #n8n-chat button {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+    #n8n-chat textarea,
+    #n8n-chat input[type="text"] {
+        font-size: 16px !important; /* Previne zoom automático */
+    }
+
+    @media (max-width: 768px) {
+        #n8n-chat div[class*="window"] {
+            /* Ajuste para notch do iPhone */
+            padding-top: env(safe-area-inset-top, 0);
+            padding-bottom: env(safe-area-inset-bottom, 0);
+        }
+    }
+}
+
+/* Android specific fixes */
+@media (max-width: 768px) {
+    #n8n-chat {
+        /* Previne problemas com teclado virtual */
+        position: fixed !important;
+        bottom: 0 !important;
+    }
+}
+
+/* Accessibility improvements for mobile */
+@media (max-width: 768px) {
+    #n8n-chat button,
+    #n8n-chat a {
+        min-height: 44px; /* WCAG 2.1 touch target size */
+        min-width: 44px;
+    }
+
+    #n8n-chat {
+        /* Melhora contraste para leitura em dispositivos móveis */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Customização do botão de enviar */
+#n8n-chat button[type="submit"],
+#n8n-chat button[class*="send"] {
+    background: var(--chat--color--primary);
+    color: var(--chat--color-white);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    transition: all var(--chat--transition-duration) ease;
+}
+
+#n8n-chat button[type="submit"]:hover,
+#n8n-chat button[class*="send"]:hover {
+    background: var(--chat--color--primary-shade-50);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 66, 102, 0.3);
+}
+
+#n8n-chat button[type="submit"]:active,
+#n8n-chat button[class*="send"]:active {
+    transform: translateY(0);
+}
+
+/* Ajuste de fontes para consistência com o site */
+#n8n-chat * {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+/* Tela de boas-vindas (Welcome Screen) */
+#n8n-chat div[class*="welcomeScreen"],
+#n8n-chat div[class*="welcome-screen"],
+#n8n-chat div[class*="GetStarted"] {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 200px;
+    text-align: center;
+}
+
+/* Botão "Iniciar Conversa" / "Get Started" */
+#n8n-chat button[class*="getStarted"],
+#n8n-chat button[class*="get-started"],
+#n8n-chat button[class*="GetStarted"],
+#n8n-chat button[class*="welcome"],
+#n8n-chat div[class*="GetStarted"] button,
+#n8n-chat div[class*="welcomeScreen"] button {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: var(--chat--color--primary) !important;
+    color: var(--chat--color-white) !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 1rem 2rem !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all var(--chat--transition-duration) ease !important;
+    margin-top: 1.5rem !important;
+    min-height: 48px !important;
+    min-width: 180px !important;
+    box-shadow: 0 2px 8px rgba(231, 66, 102, 0.3) !important;
+}
+
+#n8n-chat button[class*="getStarted"]:hover,
+#n8n-chat button[class*="get-started"]:hover,
+#n8n-chat button[class*="GetStarted"]:hover,
+#n8n-chat button[class*="welcome"]:hover,
+#n8n-chat div[class*="GetStarted"] button:hover,
+#n8n-chat div[class*="welcomeScreen"] button:hover {
+    background: var(--chat--color--primary-shade-50) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(231, 66, 102, 0.4) !important;
+}
+
+#n8n-chat button[class*="getStarted"]:active,
+#n8n-chat button[class*="get-started"]:active,
+#n8n-chat button[class*="GetStarted"]:active,
+#n8n-chat button[class*="welcome"]:active,
+#n8n-chat div[class*="GetStarted"] button:active,
+#n8n-chat div[class*="welcomeScreen"] button:active {
+    transform: translateY(0) !important;
+    box-shadow: 0 2px 6px rgba(231, 66, 102, 0.3) !important;
+}
+
+/* Mensagens iniciais na tela de boas-vindas */
+#n8n-chat div[class*="welcomeScreen"] p,
+#n8n-chat div[class*="GetStarted"] p {
+    color: var(--chat--color-dark);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+    max-width: 300px;
+}
+
+/* Título da tela de boas-vindas */
+#n8n-chat div[class*="welcomeScreen"] h2,
+#n8n-chat div[class*="GetStarted"] h2 {
+    color: var(--chat--color-dark);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Garantir que elementos da tela de boas-vindas estejam visíveis */
+#n8n-chat div[class*="welcomeScreen"] *,
+#n8n-chat div[class*="GetStarted"] * {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Ajustar altura mínima da janela de chat para acomodar a tela de boas-vindas */
+#n8n-chat div[class*="window"][class*="opened"] {
+    min-height: 400px;
+}
+
+/* Garantir que o campo de entrada (textarea/input) esteja sempre visível */
+#n8n-chat textarea,
+#n8n-chat input[type="text"],
+#n8n-chat div[class*="input"],
+#n8n-chat div[class*="Input"],
+#n8n-chat form,
+#n8n-chat div[class*="form"],
+#n8n-chat div[class*="inputContainer"],
+#n8n-chat div[class*="messageInput"] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+/* Estilizar o textarea/input */
+#n8n-chat textarea,
+#n8n-chat input[type="text"] {
+    width: 100% !important;
+    min-height: 56px !important;
+    max-height: 120px !important;
+    padding: 1rem !important;
+    border: 2px solid var(--chat--color-medium) !important;
+    border-radius: 8px !important;
+    background: var(--chat--color-white) !important;
+    color: var(--chat--color-dark) !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    resize: vertical !important;
+    box-sizing: border-box !important;
+}
+
+#n8n-chat textarea:focus,
+#n8n-chat input[type="text"]:focus {
+    outline: none !important;
+    border-color: var(--chat--color--primary) !important;
+    box-shadow: 0 0 0 3px rgba(231, 66, 102, 0.1) !important;
+}
+
+#n8n-chat textarea::placeholder,
+#n8n-chat input[type="text"]::placeholder {
+    color: var(--chat--color-disabled) !important;
+    opacity: 0.7 !important;
+}
+
+/* Garantir que o container do input esteja visível */
+#n8n-chat div[class*="footer"],
+#n8n-chat div[class*="Footer"],
+#n8n-chat div[class*="inputArea"],
+#n8n-chat div[class*="InputArea"],
+#n8n-chat div[class*="composer"],
+#n8n-chat div[class*="Composer"] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: sticky !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    padding: 1rem !important;
+    background: var(--chat--color-white) !important;
+    border-top: 1px solid var(--chat--color-medium) !important;
+    z-index: 100 !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+}
+
+/* Forçar exibição de todos os elementos do formulário */
+#n8n-chat form {
+    display: flex !important;
+    width: 100% !important;
+    flex-direction: row !important;
+    align-items: flex-end !important;
+    gap: 0.5rem !important;
+}
+
+#n8n-chat form * {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Garantir que o botão de enviar esteja visível */
+#n8n-chat button[type="submit"],
+#n8n-chat button[class*="send"],
+#n8n-chat button[class*="Send"] {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    flex-shrink: 0 !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+}
+
+/* Garantir área de mensagens não sobreponha o input */
+#n8n-chat div[class*="messages"],
+#n8n-chat div[class*="Messages"] {
+    padding-bottom: 80px !important;
+    overflow-y: auto !important;
+}
+
+/* Estrutura do chat */
+#n8n-chat div[class*="window"] {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+
+#n8n-chat div[class*="body"],
+#n8n-chat div[class*="Body"] {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+}
+
+
+
+/* DEBUG: Forçar todos os elementos do chat a serem visíveis */
+#n8n-chat,
+#n8n-chat * {
+    box-sizing: border-box !important;
+}
+
+/* Garantir que nada esteja escondido por display: none */
+#n8n-chat [style*="display: none"],
+#n8n-chat [style*="display:none"] {
+    display: block !important;
+}
+
+/* Remover qualquer height: 0 que possa estar escondendo elementos */
+#n8n-chat [style*="height: 0"],
+#n8n-chat [style*="height:0"] {
+    height: auto !important;
+    min-height: auto !important;
+}
+
+/* Forçar visibilidade de inputs escondidos */
+#n8n-chat input[type="text"][style*="display"],
+#n8n-chat textarea[style*="display"] {
+    display: block !important;
+}
+
+/* Layout do chat - garantir estrutura correta */
+#n8n-chat > div {
+    display: block !important;
+}
+
+/* Garantir que o chat aberto tenha estrutura correta */
+#n8n-chat div[class*="open"] {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Placeholder do textarea deve ser visível */
+#n8n-chat textarea::-webkit-input-placeholder,
+#n8n-chat input::-webkit-input-placeholder {
+    opacity: 0.6 !important;
+}
+
+#n8n-chat textarea:-moz-placeholder,
+#n8n-chat input:-moz-placeholder {
+    opacity: 0.6 !important;
+}
+
+#n8n-chat textarea::-moz-placeholder,
+#n8n-chat input::-moz-placeholder {
+    opacity: 0.6 !important;
+}
+
+#n8n-chat textarea:-ms-input-placeholder,
+#n8n-chat input:-ms-input-placeholder {
+    opacity: 0.6 !important;
+}

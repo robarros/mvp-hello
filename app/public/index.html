@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hello - Operadora de telefonia móvel com planos flexíveis, cobertura 5G e atendimento 24/7. Conecte-se ao futuro com a melhor tecnologia chinesa no Brasil.">
+    <meta name="keywords" content="operadora, telefonia móvel, 5G, planos de celular, internet móvel, Hello, telecomunicações">
+    <meta name="author" content="Hello Operadora">
+    <meta property="og:title" content="Hello - Sua Operadora Digital">
+    <meta property="og:description" content="Planos de telefonia móvel com a melhor cobertura e atendimento do Brasil">
+    <meta property="og:type" content="website">
+    <title>Hello - Sua Operadora Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- n8n Chat Widget CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="hello.jpeg" alt="Hello Logo">
+                    <span>Hello</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#plans">Planos</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="hamburger" aria-label="Menu" role="button" tabindex="0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Conecte-se ao Futuro</h1>
+                <p>Planos de telefonia móvel com a melhor cobertura e atendimento do Brasil</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="verPlanosBtn">Ver Planos</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre a Hello</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3>Conectando Dois Gigantes</h3>
+                        <p>A <strong>Hello</strong> nasceu da visão de unir a inovação tecnológica chinesa com o dinamismo e potencial do mercado brasileiro. Somos uma operadora de telefonia móvel que representa a ponte entre dois dos maiores mercados do mundo.</p>
+                    </div>
+                    
+                    <div class="about-mission">
+                        <div class="mission-card">
+                            <div class="mission-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="mission-content">
+                                <h4>Nossa Origem</h4>
+                                <p>Com sede na China, um dos maiores centros de tecnologia e inovação do mundo, a Hello traz para o Brasil décadas de experiência em telecomunicações. Investimos significativamente no mercado brasileiro porque acreditamos no potencial de crescimento e na força do povo brasileiro.</p>
+                            </div>
+                        </div>
+
+                        <div class="mission-card">
+                            <div class="mission-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="mission-content">
+                                <h4>Inovação e Tecnologia</h4>
+                                <p>Utilizamos a tecnologia de ponta desenvolvida na China, adaptada às necessidades dos brasileiros. Nossa infraestrutura 5G é uma das mais avançadas, proporcionando velocidade e qualidade incomparáveis em comunicação móvel.</p>
+                            </div>
+                        </div>
+
+                        <div class="mission-card">
+                            <div class="mission-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="mission-content">
+                                <h4>Compromisso com o Brasil</h4>
+                                <p>Nosso investimento vai além da tecnologia. Criamos empregos locais, capacitamos profissionais brasileiros e contribuímos para o desenvolvimento das telecomunicações no país. Acreditamos que a parceria sino-brasileira é essencial para um futuro conectado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">2025</div>
+                            <div class="stat-label">Ano de Chegada no Brasil</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5G</div>
+                            <div class="stat-label">Tecnologia de Ponta</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Cobertura Nacional</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Suporte Dedicado</div>
+                        </div>
+                    </div>
+
+                    <div class="about-values">
+                        <h3>Nossos Valores</h3>
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <i class="fas fa-globe-americas"></i>
+                                <h5>Conexão Global</h5>
+                                <p>Unindo continentes através da comunicação</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <h5>Inovação Constante</h5>
+                                <p>Sempre à frente em tecnologia</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-users"></i>
+                                <h5>Foco no Cliente</h5>
+                                <p>Seu sucesso é nossa prioridade</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-leaf"></i>
+                                <h5>Sustentabilidade</h5>
+                                <p>Tecnologia responsável e verde</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <p class="cta-text">Faça parte dessa história de sucesso entre China e Brasil. Escolha Hello e conecte-se ao futuro!</p>
+                        <button class="btn btn-primary" id="conhecaPlanosBtn">Conheça Nossos Planos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="plans">
+        <div class="container">
+            <h2>Nossos Planos</h2>
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Básico</h3>
+                    <div class="plan-price">
+                        <span class="currency">R$</span>
+                        <span class="price">79</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 10GB Internet</li>
+                        <li><i class="fas fa-check"></i> Ligações Ilimitadas</li>
+                        <li><i class="fas fa-check"></i> SMS Ilimitado</li>
+                        <li><i class="fas fa-check"></i> Suporte 24h</li>
+                    </ul>
+                    <button class="btn btn-outline">Contratar</button>
+                </div>
+
+                <div class="plan-card featured">
+                    <div class="badge">Mais Popular</div>
+                    <div class="plan-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Premium</h3>
+                    <div class="plan-price">
+                        <span class="currency">R$</span>
+                        <span class="price">129</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 30GB Internet</li>
+                        <li><i class="fas fa-check"></i> Ligações Ilimitadas</li>
+                        <li><i class="fas fa-check"></i> SMS Ilimitado</li>
+                        <li><i class="fas fa-check"></i> Apps Grátis</li>
+                        <li><i class="fas fa-check"></i> Suporte Prioritário</li>
+                    </ul>
+                    <button class="btn btn-primary">Contratar</button>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Ultra</h3>
+                    <div class="plan-price">
+                        <span class="currency">R$</span>
+                        <span class="price">199</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 60GB Internet</li>
+                        <li><i class="fas fa-check"></i> 5G Ilimitado</li>
+                        <li><i class="fas fa-check"></i> Ligações Ilimitadas</li>
+                        <li><i class="fas fa-check"></i> SMS Ilimitado</li>
+                        <li><i class="fas fa-check"></i> Roaming Internacional</li>
+                    </ul>
+                    <button class="btn btn-outline">Contratar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Planos Pós-Pago</h3>
+                    <p>Aproveite a liberdade de usar sem preocupação com a fatura mensal. Nossos planos pós-pagos oferecem internet em alta velocidade, ligações ilimitadas para qualquer operadora do Brasil, SMS ilimitado e acesso aos melhores apps de streaming e redes sociais. Tudo isso com cobertura nacional e sem surpresas na fatura. Escolha o plano ideal para seu perfil e navegue com tranquilidade.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-sim-card"></i>
+                    <h3>Planos Pré-Pago</h3>
+                    <p>Tenha controle total dos seus gastos com a flexibilidade do pré-pago Hello. Faça recargas a partir de R$ 10 e aproveite bônus de internet, minutos e SMS. Sem mensalidade, sem fidelidade e sem surpresas. Você recarrega quando quiser e usa como quiser. Ideal para quem busca economia inteligente e praticidade no dia a dia. Seus créditos têm validade estendida e você ainda acumula benefícios exclusivos.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-signal"></i>
+                    <h3>Cobertura 5G</h3>
+                    <p>Experimente a velocidade do futuro com nossa rede 5G de última geração. Baixe filmes em segundos, faça videochamadas em altíssima qualidade e jogue online sem lag. Nossa infraestrutura 5G está presente nas principais capitais e regiões metropolitanas do Brasil, com expansão contínua. Velocidades de até 10Gbps, latência ultra baixa e estabilidade incomparável para você estar sempre conectado ao que importa.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Roaming Internacional</h3>
+                    <p>Viaje conectado para mais de 100 países sem preocupação. Com o roaming internacional Hello, você usa internet, faz ligações e envia mensagens no exterior com tarifas competitivas e pacotes de dados especiais para viagem. Ative automaticamente ao chegar no destino e navegue com a mesma qualidade. Cobertura garantida nas Américas, Europa, Ásia e Oceania. Consulte nossos pacotes de viagem com franquias de dados a partir de R$ 49,90.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="faq-header">
+                <h2>Perguntas Frequentes</h2>
+                <p>Tire suas dúvidas sobre nossos serviços de telefonia móvel</p>
+            </div>
+            
+            <div class="faq-categories">
+                <button class="faq-category-btn active" data-category="all">
+                    <i class="fas fa-th"></i> Todas
+                </button>
+                <button class="faq-category-btn" data-category="empresa">
+                    <i class="fas fa-building"></i> Sobre a Empresa
+                </button>
+                <button class="faq-category-btn" data-category="planos">
+                    <i class="fas fa-mobile-alt"></i> Planos
+                </button>
+                <button class="faq-category-btn" data-category="atendimento">
+                    <i class="fas fa-headset"></i> Atendimento
+                </button>
+                <button class="faq-category-btn" data-category="cobertura">
+                    <i class="fas fa-signal"></i> Cobertura
+                </button>
+                <button class="faq-category-btn" data-category="portabilidade">
+                    <i class="fas fa-exchange-alt"></i> Portabilidade
+                </button>
+                <button class="faq-category-btn" data-category="fatura">
+                    <i class="fas fa-file-invoice-dollar"></i> Fatura
+                </button>
+                <button class="faq-category-btn" data-category="tecnico">
+                    <i class="fas fa-tools"></i> Suporte Técnico
+                </button>
+            </div>
+
+            <div class="faq-search">
+                <i class="fas fa-search"></i>
+                <input type="text" id="faqSearch" placeholder="Buscar dúvida...">
+            </div>
+
+            <div class="faq-container">
+                <!-- Sobre a Empresa -->
+                <div class="faq-item" data-category="empresa">
+                    <div class="faq-question">
+                        <h3>O que é a Hello Operadora?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A <strong>Hello</strong> nasceu da visão de unir a inovação tecnológica chinesa com o dinamismo e potencial do mercado brasileiro. Somos uma operadora de telefonia móvel que representa a ponte entre dois dos maiores mercados do mundo. Com sede na China, um dos maiores centros de tecnologia e inovação, trazemos décadas de experiência em telecomunicações para o Brasil. Chegamos ao país em 2025 com o compromisso de revolucionar o mercado de telefonia móvel com tecnologia 5G de ponta e planos inovadores.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="empresa">
+                    <div class="faq-question">
+                        <h3>Qual a origem da Hello e por que investiram no Brasil?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Com sede na <strong>China</strong>, um dos maiores centros de tecnologia e inovação do mundo, a Hello traz para o Brasil décadas de experiência em telecomunicações. Investimos significativamente no mercado brasileiro porque acreditamos no potencial de crescimento e na força do povo brasileiro. O Brasil é um mercado estratégico para nossa expansão global, com uma população conectada e ávida por tecnologia de qualidade. Nossa missão é conectar dois gigantes: a China e o Brasil, oferecendo o melhor da tecnologia asiática adaptada às necessidades dos brasileiros.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="empresa">
+                    <div class="faq-question">
+                        <h3>Que tipo de tecnologia a Hello utiliza?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Utilizamos <strong>tecnologia de ponta desenvolvida na China</strong>, adaptada às necessidades dos brasileiros. Nossa infraestrutura 5G é uma das mais avançadas, proporcionando velocidade e qualidade incomparáveis em comunicação móvel. Trabalhamos com equipamentos de última geração, antenas inteligentes e sistemas de rede que garantem estabilidade mesmo em horários de pico. Nossa tecnologia permite velocidades de até 10Gbps no 5G e latência ultra baixa, ideal para games, streaming e videochamadas em alta qualidade.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="empresa">
+                    <div class="faq-question">
+                        <h3>Qual o compromisso da Hello com o Brasil?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nosso investimento vai além da tecnologia. Criamos <strong>empregos locais</strong>, capacitamos profissionais brasileiros e contribuímos para o desenvolvimento das telecomunicações no país. Temos centros de treinamento para formar técnicos especializados em 5G, investimos em infraestrutura em regiões menos atendidas e apoiamos projetos sociais de inclusão digital. Acreditamos que a parceria sino-brasileira é essencial para um futuro conectado. Todo ano, reinvestimos parte do nosso lucro em expansão da rede e melhorias no atendimento ao cliente brasileiro.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="empresa">
+                    <div class="faq-question">
+                        <h3>Quais são os valores da Hello?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nossos quatro pilares fundamentais são: <strong>🌍 Conexão Global</strong> - Unindo continentes através da comunicação, conectando pessoas e culturas; <strong>💡 Inovação Constante</strong> - Sempre à frente em tecnologia, trazendo as últimas novidades em telecomunicações; <strong>👥 Foco no Cliente</strong> - Seu sucesso é nossa prioridade, oferecendo atendimento humanizado e soluções personalizadas; <strong>🌱 Sustentabilidade</strong> - Tecnologia responsável e verde, com torres sustentáveis e compromisso com energia limpa. Esses valores guiam todas as nossas decisões e operações no Brasil.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="empresa">
+                    <div class="faq-question">
+                        <h3>A Hello tem lojas físicas no Brasil?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Temos lojas físicas nas principais capitais e cidades do Brasil, funcionando de <strong>segunda a sábado das 9h às 20h</strong> e aos <strong>domingos das 10h às 18h</strong>. Em nossas lojas você pode: contratar planos, trocar chips, tirar dúvidas com nossos consultores, comprar aparelhos com desconto exclusivo, e receber suporte técnico presencial. Consulte nosso site para encontrar a loja mais próxima de você. Também temos quiosques em shopping centers e parcerias com revendedoras autorizadas em todo o país.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="empresa">
+                    <div class="faq-question">
+                        <h3>Como a Hello se diferencia das outras operadoras?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nossa diferença está na <strong>combinação única de tecnologia avançada chinesa com compreensão do mercado brasileiro</strong>. Oferecemos: Infraestrutura 5G de última geração; Planos sem fidelidade obrigatória; Apps ilimitados (redes sociais não descontam da franquia); Atendimento 24h em 4 idiomas (português, inglês, espanhol e mandarim); Transparência total - sem taxas escondidas; Investimento contínuo em expansão da rede; Suporte técnico especializado com atendimento prioritário; Preços competitivos com qualidade premium. Somos uma operadora global com DNA brasileiro.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="empresa">
+                    <div class="faq-question">
+                        <h3>A Hello é confiável e regulamentada no Brasil?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutamente! Somos uma operadora <strong>100% regulamentada pela Anatel</strong> (Agência Nacional de Telecomunicações) e cumprimos todas as exigências legais brasileiras. Possuímos todas as licenças necessárias para operar em território nacional, seguimos rigorosamente as normas de telecomunicações e proteção de dados (LGPD), temos certificações internacionais de qualidade (ISO 9001), e nossos sistemas de segurança são auditados regularmente. Você pode consultar nossa situação na Anatel através do nosso código de operadora disponível no site. Transparência e conformidade são prioridades para nós.</p>
+                    </div>
+                </div>
+
+                <!-- Atendimento -->
+                <div class="faq-item" data-category="atendimento">
+                    <div class="faq-question">
+                        <h3>Quais são os canais de atendimento disponíveis?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oferecemos diversos canais para seu conforto: <strong>Central de Relacionamento (Móvel):</strong> 1052 ou *8486 do seu celular Hello (24 horas); <strong>Ouvidoria:</strong> 0800 775 1212; <strong>WhatsApp:</strong> Funciona 24 horas, todos os dias; <strong>Chat online:</strong> Disponível no site e aplicativo Hello; <strong>E-mail:</strong> contato@hello.com.br; <strong>Lojas físicas:</strong> Consulte nossas lojas mais próximas no site; <strong>App Hello:</strong> Disponível para iOS e Android com área do cliente completa.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="atendimento">
+                    <div class="faq-question">
+                        <h3>Qual o horário de funcionamento do atendimento?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Central de Relacionamento (Móvel):</strong> Atendimento 24 horas, todos os dias (1052 ou *8486). <strong>WhatsApp:</strong> Funciona 24 horas, todos os dias. <strong>Ouvidoria:</strong> Segunda a sexta-feira, das 8h às 18h para pessoa jurídica e das 8h às 19h para pessoa física (exceto feriados) - Telefone: 0800 775 1212. Nossas lojas físicas funcionam de segunda a sábado, das 9h às 20h, e aos domingos das 10h às 18h. O app e área do cliente no site estão disponíveis 24h para consultas, pagamentos e contratações.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="atendimento">
+                    <div class="faq-question">
+                        <h3>Como funciona o suporte técnico?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nosso suporte técnico está disponível 24h pelo 1052, *8486 (do seu celular Hello) ou chat online. Para problemas com internet, ligações, SMS ou configurações de aparelho, nossa equipe especializada pode ajudar remotamente. Em casos mais complexos, agendamos visita técnica gratuita ou orientamos sobre assistências técnicas autorizadas. Clientes dos planos Premium e Ultra têm atendimento prioritário com tempo médio de espera de apenas 30 segundos.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="atendimento">
+                    <div class="faq-question">
+                        <h3>Posso ser atendido em outro idioma?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Além do português, oferecemos atendimento em <strong>inglês, espanhol e mandarim</strong> pelo 1052 ou *8486. Ao ligar, informe ao atendente o idioma de sua preferência. No app e site, você também pode selecionar o idioma de navegação. Este serviço está incluído em todos os planos sem custo adicional.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="atendimento">
+                    <div class="faq-question">
+                        <h3>Como faço para elogiar ou reclamar do atendimento?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sua opinião é muito importante! Para elogios, reclamações ou sugestões, acesse a área "Ouvidoria" no site ou app. Você também pode enviar e-mail para ouvidoria@hello.com.br ou ligar para a <strong>Ouvidoria: 0800 775 1212</strong> (segunda a sexta-feira, das 8h às 18h para pessoa jurídica e das 8h às 19h para pessoa física, exceto feriados). Respondemos todas as manifestações em até 48 horas. Casos não resolvidos podem ser encaminhados para a Anatel através do nosso código de operadora disponível no site.</p>
+                    </div>
+                </div>
+
+                <!-- Planos -->
+                <div class="faq-item" data-category="planos">
+                    <div class="faq-question">
+                        <h3>Quais planos de telefonia móvel vocês oferecem?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oferecemos 3 planos principais de pós-pago: <strong>Básico (R$ 79/mês):</strong> 10GB de internet, ligações ilimitadas para todo Brasil, SMS ilimitado e suporte 24h. <strong>Premium (R$ 129/mês):</strong> 30GB de internet, ligações ilimitadas, SMS ilimitado, apps grátis (WhatsApp, Instagram, Facebook, Twitter sem descontar da franquia) e suporte prioritário. <strong>Ultra (R$ 199/mês):</strong> 60GB de internet, 5G ilimitado, ligações ilimitadas, SMS ilimitado, roaming internacional incluído em 15 países e suporte VIP. Também oferecemos planos pré-pagos a partir de R$ 10 e planos família com até 5 linhas compartilhadas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="planos">
+                    <div class="faq-question">
+                        <h3>Qual a diferença entre os planos Básico, Premium e Ultra?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Básico:</strong> Ideal para uso moderado, oferece o essencial com boa franquia de dados. <strong>Premium:</strong> Nosso plano mais popular! Inclui apps ilimitados (redes sociais não descontam da internet) e franquia generosa para quem usa muito o celular. <strong>Ultra:</strong> Para quem não quer limites! 5G em velocidade máxima sem redução, roaming internacional (EUA, Europa, China, Japão e mais 11 países) e prioridade na rede em eventos e locais movimentados. Todos incluem ligações e SMS ilimitados para qualquer operadora do Brasil.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="planos">
+                    <div class="faq-question">
+                        <h3>Vocês têm plano pré-pago? Como funciona?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Nosso pré-pago Hello Controle é super flexível. Recargas a partir de R$ 10 com validade de 15 dias. <strong>Exemplos de recargas:</strong> R$ 10 = 2GB + 100min; R$ 20 = 5GB + 200min; R$ 30 = 10GB + ilimitado; R$ 50 = 20GB + ilimitado + apps grátis. Você pode recarregar pelo app, site, lotéricas, bancos ou enviando SMS. Créditos não utilizados acumulam para próxima recarga. Sem mensalidade, sem fidelidade e sem surpresas na fatura!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="planos">
+                    <div class="faq-question">
+                        <h3>Existe plano família ou para mais de uma linha?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Nossos <strong>Planos Família Hello</strong> permitem até 5 linhas na mesma conta com desconto progressivo: 2ª linha: 20% off; 3ª linha: 30% off; 4ª e 5ª linhas: 40% off. Todos compartilham a mesma data de vencimento e podem ter planos diferentes. Exemplo: Titular com Ultra + 2 dependentes com Premium + 2 com Básico. A franquia de internet pode ser compartilhada ou individual (você escolhe). Ideal para economizar e gerenciar todas as linhas da família em um só lugar!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="planos">
+                    <div class="faq-question">
+                        <h3>Os apps grátis do plano Premium incluem quais aplicativos?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No plano Premium e Ultra, você usa <strong>ilimitadamente</strong> sem descontar da franquia: WhatsApp (mensagens, chamadas de voz e vídeo), Instagram, Facebook, Twitter, TikTok, Telegram e Waze. Você pode curtir, postar, assistir stories e fazer videochamadas à vontade! Apenas downloads de vídeos e fotos nesses apps consomem franquia. Streaming de música (Spotify, Deezer) também está incluso nos apps grátis do plano Ultra.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="planos">
+                    <div class="faq-question">
+                        <h3>Como funciona a contratação de um plano?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A contratação é simples e rápida! Você pode contratar diretamente pelo nosso site, aplicativo ou em uma de nossas lojas físicas. Para contratação online, basta escolher o plano desejado, preencher seus dados e aguardar o chip em casa em até 3 dias úteis. A ativação é automática ao inserir o chip no aparelho.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="planos">
+                    <div class="faq-question">
+                        <h3>Posso trocar de plano depois de contratado?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Você pode alterar seu plano a qualquer momento através do nosso aplicativo, site ou central de atendimento. A mudança para um plano superior é imediata. Para planos inferiores, a alteração ocorrerá na próxima renovação. Não há taxa de alteração.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="planos">
+                    <div class="faq-question">
+                        <h3>Os planos têm fidelidade?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nossos planos pós-pagos não possuem fidelidade obrigatória, você pode cancelar quando quiser sem multa. Caso opte por um plano com fidelidade de 12 meses, você ganha benefícios exclusivos como aparelho com desconto ou bônus de internet. A fidelidade só se aplica se você escolher essa opção.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="planos">
+                    <div class="faq-question">
+                        <h3>O que acontece se eu exceder a franquia de internet?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ao atingir 100% da sua franquia de internet, a velocidade será reduzida para até 1Mbps, mas você continua navegando sem custos adicionais. Você pode contratar pacotes extras de dados a qualquer momento pelo app ou enviar um SMS. A franquia é renovada todo mês na data do seu aniversário de contratação.</p>
+                    </div>
+                </div>
+
+                <!-- Cobertura -->
+                <div class="faq-item" data-category="cobertura">
+                    <div class="faq-question">
+                        <h3>Como verificar a cobertura na minha região?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Acesse nosso site e vá na seção "Cobertura". Digite seu CEP ou endereço completo para verificar a disponibilidade de cobertura 4G e 5G na sua região. Você também pode ligar para 1052 (ou *8486 do seu celular Hello) e consultar com um de nossos atendentes. Nossa cobertura está em constante expansão.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="cobertura">
+                    <div class="faq-question">
+                        <h3>Meu celular é compatível com 5G?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Para usar nossa rede 5G, seu aparelho precisa ser compatível com a tecnologia 5G. A maioria dos smartphones lançados a partir de 2021 já possuem essa funcionalidade. Você pode verificar no manual do seu aparelho ou nas configurações em "Sobre o telefone". Mesmo sem aparelho 5G, você continua usando normalmente o 4G.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="cobertura">
+                    <div class="faq-question">
+                        <h3>Funciona em todo o Brasil?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Temos cobertura nacional 4G em todas as capitais e principais cidades do Brasil. Nossa rede 5G está disponível nas principais regiões metropolitanas e em constante expansão. Em áreas onde o 5G ainda não chegou, você utiliza automaticamente o 4G com a mesma qualidade.</p>
+                    </div>
+                </div>
+
+                <!-- Portabilidade -->
+                                <!-- Portabilidade -->
+                <div class="faq-item" data-category="portabilidade">
+                    <div class="faq-question">
+                        <h3>O que é portabilidade numérica?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Portabilidade numérica é o <strong>direito garantido por lei</strong> de você trocar de operadora mantendo o mesmo número de telefone. Isso significa que você pode migrar de qualquer operadora para a Hello e continuar usando o mesmo número que sempre teve, sem precisar avisar todos os seus contatos. O serviço é totalmente gratuito e o processo é simples e seguro. A portabilidade é regulamentada pela Anatel e todas as operadoras são obrigadas a facilitar esse processo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="portabilidade">
+                    <div class="faq-question">
+                        <h3>Como fazer a portabilidade do meu número?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A portabilidade é <strong>grátis e fácil</strong>! <strong>Passo a passo:</strong> 1) Contrate seu plano Hello (online, app ou loja); 2) Você receberá o chip e as instruções por SMS; 3) Envie um SMS com a palavra "<strong>PORT</strong>" para o número indicado; 4) Confirme seus dados pessoais (nome, CPF, endereço); 5) Aguarde até 3 dias úteis; 6) Você será avisado por SMS quando a portabilidade estiver concluída; 7) Seu número antigo será automaticamente transferido para o chip Hello. Durante todo o processo, seu número antigo continua funcionando normalmente até a conclusão.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="portabilidade">
+                    <div class="faq-question">
+                        <h3>Quanto tempo demora a portabilidade?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O prazo legal é de <strong>até 3 dias úteis</strong> após o envio da solicitação via SMS. Na prática, a maioria das portabilidades é concluída em 24 a 48 horas. Você receberá SMS informativos em cada etapa: confirmação do pedido, análise em andamento, e confirmação de conclusão. Durante todo esse período, você continua usando seu número normalmente na operadora antiga. Quando a portabilidade for concluída, basta inserir o chip Hello e seu número estará automaticamente ativado.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="portabilidade">
+                    <div class="faq-question">
+                        <h3>Quanto custa fazer a portabilidade?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A portabilidade é <strong>100% GRATUITA</strong>! Você não paga nada para trazer seu número para a Hello. Não há taxa de portabilidade, taxa de transferência ou qualquer custo adicional. Isso é garantido por lei - nenhuma operadora pode cobrar pela portabilidade. O único custo que você terá é o valor do plano Hello que escolher. Também não há custos com a operadora antiga para liberar seu número - eles são obrigados por lei a facilitar a portabilidade sem cobranças.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="portabilidade">
+                    <div class="faq-question">
+                        <h3>Perco meu número se trocar de operadora?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Não!</strong> Com a portabilidade numérica, você mantém seu número ao trocar de operadora. O processo é garantido por lei (Lei Geral de Telecomunicações) e totalmente gratuito. <strong>Seu número é seu</strong>, independente da operadora. Ao vir para Hello, você continua usando o mesmo número que já possui. Seus contatos não precisam ser avisados, você não perde mensagens ou histórico, e seu WhatsApp continua funcionando normalmente após a portabilidade.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="portabilidade">
+                    <div class="faq-question">
+                        <h3>Posso usar meu chip enquanto aguardo a portabilidade?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Ao receber seu chip Hello, você já pode utilizá-lo com um <strong>número provisório</strong> enquanto aguarda a conclusão da portabilidade. Você já terá acesso a toda internet do seu plano e poderá fazer ligações normalmente. É uma ótima forma de testar nossa rede e qualidade de serviço. Quando a portabilidade for concluída, o número antigo será transferido automaticamente para o chip - você não precisa fazer nada. Seu número provisório será desativado e o número portado assume seu lugar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="portabilidade">
+                    <div class="faq-question">
+                        <h3>Quais documentos preciso para fazer a portabilidade?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Para fazer a portabilidade você precisa ter em mãos: <strong>CPF</strong> (o mesmo cadastrado na operadora atual); <strong>RG ou documento com foto</strong>; <strong>Comprovante de residência</strong> atualizado (últimos 3 meses); <strong>Número do telefone</strong> que será portado. <strong>Importante:</strong> Os dados devem estar exatamente iguais ao cadastro da sua operadora atual. Caso tenha mudado de endereço ou nome, atualize primeiro na operadora atual antes de solicitar a portabilidade. Para empresas (CNPJ), é necessário também o contrato social ou última alteração.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="portabilidade">
+                    <div class="faq-question">
+                        <h3>Posso cancelar a portabilidade depois de solicitada?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, você pode cancelar a portabilidade antes dela ser concluída. Entre em contato com nosso atendimento pelo <strong>1052 (ou *8486 do seu celular)</strong> ou pelo chat e informe que deseja cancelar o processo. Se a portabilidade ainda não foi efetivada, faremos o cancelamento imediatamente e você continuará com sua operadora atual. Porém, se você já enviou o SMS "PORT" e mudou de ideia, é importante cancelar o quanto antes. Após a conclusão da portabilidade, para voltar à operadora anterior você precisará fazer uma nova portabilidade.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="portabilidade">
+                    <div class="faq-question">
+                        <h3>E se minha portabilidade for negada ou tiver problemas?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>As causas mais comuns de problemas são: <strong>Dados divergentes</strong> - CPF, nome ou endereço diferentes do cadastro na operadora atual; <strong>Débitos pendentes</strong> - Contas em aberto com a operadora antiga (você deve quitá-las primeiro); <strong>Linha bloqueada</strong> - Por falta de pagamento ou uso; <strong>Chip não cadastrado</strong> - Linha pré-paga sem cadastro completo. Se sua portabilidade for negada, entraremos em contato explicando o motivo e orientando como resolver. Nossa equipe de suporte especializada em portabilidade está disponível 24h para ajudar você em todo o processo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="portabilidade">
+                    <div class="faq-question">
+                        <h3>O WhatsApp continua funcionando após a portabilidade?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Seu <strong>WhatsApp continua funcionando normalmente</strong> após a portabilidade. Como você mantém o mesmo número, o WhatsApp reconhece automaticamente e você não perde nada: conversas, grupos, contatos, mídia - tudo permanece. <strong>Dica importante:</strong> Antes de trocar o chip, faça backup do WhatsApp (Configurações > Conversas > Backup). Após a portabilidade ser concluída e você inserir o chip Hello, o WhatsApp pode pedir para verificar seu número novamente (você receberá um código por SMS). Pronto! Em poucos segundos tudo volta ao normal.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="portabilidade">
+                    <div class="faq-question">
+                        <h3>Posso portar um número pré-pago para pós-pago na Hello?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Você pode portar números <strong>pré-pagos para pós-pago</strong> ou <strong>pós-pagos para pré-pago</strong> na Hello sem problemas. O processo é o mesmo. Muitos clientes aproveitam a portabilidade para mudar de modalidade e ter mais controle ou comodidade. Ao contratar um plano pós-pago Hello e solicitar a portabilidade do seu número pré-pago, você automaticamente passa a ter os benefícios do pós: franquia generosa, apps ilimitados e fatura mensal. É uma ótima oportunidade para upgrade!</p>
+                    </div>
+                </div>
+
+                <!-- Fatura -->
+
+                <!-- Fatura -->
+                <div class="faq-item" data-category="fatura">
+                    <div class="faq-question">
+                        <h3>Como visualizar minha fatura?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você pode visualizar sua fatura pelo aplicativo Hello, no site (área do cliente) ou recebê-la por e-mail. A fatura fica disponível até 5 dias antes do vencimento. No app, você também acompanha o consumo em tempo real e pode configurar alertas de uso de internet e minutos.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="fatura">
+                    <div class="faq-question">
+                        <h3>Quais são as formas de pagamento?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aceitamos débito automático em conta corrente ou cartão de crédito, boleto bancário, PIX e pagamento nos principais bancos e lotéricas. O débito automático garante que você não perca o vencimento e ainda pode ter desconto especial. A configuração do débito automático pode ser feita pelo app ou site.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="fatura">
+                    <div class="faq-question">
+                        <h3>O que fazer se minha fatura vier com valor incorreto?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Entre em contato imediatamente com nosso suporte pelo 1052 (ou *8486 do seu celular Hello), pelo chat no site ou app. Nossa equipe irá analisar sua fatura detalhadamente e, se houver erro, faremos o ajuste e devolução do valor cobrado a mais na próxima fatura. Você também pode contestar valores através da área do cliente no site.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="fatura">
+                    <div class="faq-question">
+                        <h3>Posso parcelar minha fatura atrasada?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Se você estiver com dificuldades para pagar a fatura, entre em contato conosco pelo 1052 ou *8486. Oferecemos opções de parcelamento e renegociação de débitos. O importante é não deixar acumular, pois após 60 dias de atraso sua linha pode ser suspensa. Estamos aqui para ajudar a encontrar a melhor solução.</p>
+                    </div>
+                </div>
+
+                <!-- Suporte Técnico -->
+                <div class="faq-item" data-category="tecnico">
+                    <div class="faq-question">
+                        <h3>Meu celular não está pegando internet, o que fazer?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Primeiro, verifique se os dados móveis estão ativados e se você tem saldo de internet disponível. Reinicie o aparelho e verifique se o APN está configurado corretamente (você encontra as configurações no nosso site). Se o problema persistir, entre em contato com nosso suporte técnico disponível 24h pelo 1052 ou *8486 do seu celular Hello.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="tecnico">
+                    <div class="faq-question">
+                        <h3>Como configurar a internet no meu celular?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Normalmente a configuração é automática. Mas se necessário, você pode configurar manualmente. Acesse: Configurações > Redes Móveis > Nomes de pontos de acesso (APN). Use os dados: APN: hello.br | Nome de usuário: hello | Senha: hello. Salve e reinicie o aparelho. Se precisar de ajuda, nosso suporte técnico pode auxiliar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="tecnico">
+                    <div class="faq-question">
+                        <h3>Perdi ou fui roubado, o que fazer?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Entre em contato IMEDIATAMENTE pelo 1052 ou *8486 (funciona mesmo com a linha bloqueada) ou pelo site/app de outro dispositivo. Faremos o bloqueio da linha em até 24h para evitar uso indevido. Você também deve registrar um Boletim de Ocorrência. Após o bloqueio, podemos enviar um novo chip com o mesmo número sem custo em casos de roubo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="tecnico">
+                    <div class="faq-question">
+                        <h3>Como desbloquear meu aparelho?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Se seu aparelho está bloqueado para outra operadora, você precisa solicitar o desbloqueio com a operadora atual (onde comprou o aparelho). Aparelhos comprados na Hello já vêm desbloqueados de fábrica. O desbloqueio é obrigatório por lei e gratuito. Após desbloqueado, nosso chip funcionará normalmente.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="tecnico">
+                    <div class="faq-question">
+                        <h3>Chip não reconhecido, o que fazer?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Primeiro, retire o chip, limpe-o com um pano seco e reinsira. Reinicie o aparelho. Verifique se o chip está inserido corretamente e se o aparelho não está no modo avião. Teste o chip em outro aparelho para verificar se o problema é no chip ou no aparelho. Se o chip não funcionar em nenhum aparelho, entre em contato para solicitar a 2ª via gratuita.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-cta">
+                <div class="faq-cta-content">
+                    <i class="fas fa-question-circle"></i>
+                    <div>
+                        <h3>Não encontrou o que procurava?</h3>
+                        <p>Nossa equipe está pronta para ajudar você 24 horas por dia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Central de Relacionamento</h4>
+                            <p>1052 ou *8486 (24h)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-user-shield"></i>
+                        <div>
+                            <h4>Ouvidoria</h4>
+                            <p>0800 775 1212</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@hello.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horários</h4>
+                            <p>Móvel/WhatsApp: 24h | Ouvidoria: Seg-Sex 8h-18h (PJ) / 8h-19h (PF)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" name="name" placeholder="Seu Nome" required minlength="3">
+                        <input type="email" name="email" placeholder="Seu Email" required>
+                        <input type="tel" name="phone" placeholder="Seu Telefone (DDD + Número)" required pattern="[\d\s\(\)\-\+]+" minlength="10">
+                        <textarea name="message" placeholder="Sua Mensagem" rows="4" required minlength="10"></textarea>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre a Hello</h4>
+                    <p>Operadora de telefonia móvel inovadora, oferecendo planos flexíveis e cobertura de qualidade para todo o Brasil.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#plans">Planos</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com/hellooperadora" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/hellooperadora" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/hellooperadora" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/company/hellooperadora" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hello. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- n8n Chat Widget Container -->
+    <div id="n8n-chat"></div>
+    <!-- n8n Chat Widget -->
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+        createChat({
+            webhookUrl: 'http://localhost:9090/webhook/f3f7af14-50c8-4fd0-8bd0-ac80b83660d5/chat',
+            mode: 'window',
+            showWelcomeScreen: false,
+            loadPreviousSession: true,
+            initialMessages: [
+                'Olá! Bem-vindo à Hello Operadora 👋'
+            ],
+            i18n: {
+                pt: {
+                    title: 'Chat Hello',
+                    subtitle: 'Atendimento 24/7',
+                    footer: '',
+                    getStarted: 'Iniciar Conversa',
+                    inputPlaceholder: 'Digite sua mensagem...',
+                },
+            },
+            defaultLanguage: 'pt',
+            chatInputKey: 'chatInput',
+            chatSessionKey: 'sessionId',
+            enableStreaming: false,
+            allowFileUploads: false,
+            metadata: {
+                source: 'website',
+                page: window.location.pathname
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
